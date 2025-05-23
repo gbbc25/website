@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Blakenham Baptist</title>
+ 
+ <meta name="description" 
+       content="Welcome to Great Blakenham Baptist Church!">
+ <meta name="keywords" 
+       content="gbbc, church, Great Blakenham, Great Blakenham Baptist Church">
+ <link rel="stylesheet" href="css/style.css">
+
+ <script>
+	function toggleMobileNav() {
+	  const nav = document.getElementById("mobileNav");
+	  nav.classList.toggle("active");
+	}
+	</script>
+	
+</head>
+<body>
+ <!-- Page Container -->
+ <div id="container">
+
+  <!-- Header -->
+  <header> 
+   <!-- Logo --> 
+   <img id="logo" src="img/logo-img.png" width="233" height="178">
+   
+   <div id="header-right">
+   <!-- Navigation -->
+   <nav>
+	<div class="burger" onclick="toggleMobileNav()">☰</div>
+	<ul class="menu desktop-menu">
+	  <li class="active"><a href="index.html">Home</a></li>
+	  <li class="dropdown">
+		<a href="aboutus.html">About Us</a>
+		<ul class="dropdown-menu">
+		  <li><a href="beliefs.html">What We Believe</a></li>
+		  <li><a href="team.html">Meet The Team</a></li>
+		  <li><a href="missionaries.html">Missionaries</a></li>
+		</ul>
+	  </li>
+	  <li class="dropdown">
+		<a href="services.html">Services</a>
+		<ul class="dropdown-menu">
+		  <li><a href="sundayschool.html">Sunday School & Crèche</a></li>
+		</ul>
+	  </li>
+	  <li><a href="regulargroups.html">Regular Groups</a></li>
+	</ul>
+  
+	<!-- Mobile Overlay -->
+	<div class="mobile-nav-overlay" id="mobileNav">
+	  <div class="close-btn" onclick="toggleMobileNav()">×</div>
+	  <ul class="mobile-menu">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="aboutus.html">About Us</a></li>
+		<li><a href="beliefs.html">What We Believe</a></li>
+		<li><a href="team.html">Meet The Team</a></li>
+		<li><a href="missionaries.html">Missionaries</a></li>
+		<li><a href="services.html">Services</a></li>
+		<li><a href="sundayschool.html">Sunday School & Crèche</a></li>
+		<li><a href="regulargroups.html">Regular Groups</a></li>
+	  </ul>
+	</div>
+  </nav>
+  
+   <div id="service-info">
+        <p>Morning Service - 10:45 am<br>
+		   <br>
+		   Evening Service - 6:30 pm (at <a href="https://mickfieldec.co.uk/" target="_blank">MEC</a>)</p>
+   </div>
+   </div>
+
+  
+
+  </header>
+  <section id="mobile-service-times">
+	<p>Morning Service - 10:45 am<br>
+		<br>
+		Evening Service - 6:30 pm (at <a href="https://mickfieldec.co.uk/" target="_blank">MEC</a>)</p>
+  </section>
+  
+  <!-- Main Content -->
+  <div>
+  
+    <!-- Welcome section -->
+    <section id="welcome-section">
+	
+      <img id="church-photo" src="img/church-photo.avif" width="367" height="246.2">
+		
+	  <div id="welcome-text">
+		
+	    <h1 style="margin:0;">Welcome to Great Blakenham Baptist Church </h1>
+
+	      A really warm welcome to GBBC. Whether you're new to the area, have lived here for many years, or are 
+		  only here for a short time, we would love to meet you! Our Sunday services are at <b>10.45am</b> every week.
+		  We also meet together for an evening service every Sunday at <a href="https://mickfieldec.co.uk/" target="_blank">Mickfield Evangelical Church</a> at <b>6.30pm</b>.
+		  There are also many activities during the week that we welcome you to come along to. Please see below.
+
+	  </div>
+
+    </section>
+   
+   
+    <!-- Weekly events section -->
+    <section id="weekly-events">
+     
+	  <h1> Whats On When at GBBC </h1>
+    
+	  <div id="row-one">
+	  
+	    <section class="events">
+		
+	      <h1>Sunday</h1>
+		  
+	      <img src="img/sunday-bible.avif" width="178" height="102">
+		  
+	      <p class="events-styling">
+	        <a href="services.html" >Morning Service</a> <br>
+	        10:45am
+	      </p>
+	 
+	      <p class="events-styling">
+	        Communion <br>
+	        1st Sunday of the month
+	      </p>
+	 
+	      <p class="events-styling">
+	        All Age Service <br>
+	        3rd Sunday of the month
+	      </p>
+	 
+	      <p class="events-styling">
+	        Evening Service <br>
+	        6:30pm (at <a href="https://mickfieldec.co.uk/" target="_blank">MEC</a>)
+	      </p>
+		  
+	    </section>
+	
+	    <section class="events">
+	
+	      <h1>Tuesday</h1>
+		  <a href="regulargroups.html#gg_pm">
+	      <img src="img/tuesday-prayer.avif" width="178" height="253">
+		</a>
+	      <p class="events-styling">
+			<a href="regulargroups.html#gg_pm">Prayer Meeting</a> <br>
+	        2:00pm - 3:00pm
+	      </p>
+		  
+	    </section>
+	
+		<section class="events">
+
+		  <h1>Wednesday</h1>
+		  
+		  <div id="wednesday-content">
+		  
+		    <div>
+				<a href="regulargroups.html#coffee_morning">
+		      <img src="img/coffee-morning.avif" width="178" height="253">
+			  </a>
+		      <p class="events-styling">
+				<a href="regulargroups.html#coffee_morning">Coffee Morning</a> <br>
+		        10am - Noon
+		      </p>
+			  
+		    </div>
+
+		    <div>
+			
+		      <img src="img/games-night.avif" width="178" height="253">
+			  
+		      <p class="events-styling">
+		        Men's Games Night <br>
+		        7:30pm - 9:30pm
+		      </p>
+			  
+		    </div>
+
+		  </div>
+		  
+		</section>
+	
+	  </div>
+	
+	  <div id="row-two">
+	
+	    <section class="events">
+	
+	      <h1>Thursday</h1>
+		  <a href="regulargroups.html#gg_pm">
+	      <img id="thursday-growth-img" src="img/growth-groups-bible.avif" width="178" height="253">
+		  </a>
+		  <p class="events-styling">
+			<a href="regulargroups.html#gg_pm">Growth Groups</a> <br>
+		    10:15am - 11:45am <br>
+			8:00pm - 9:30pm
+		  </p>
+		  
+	    </section>
+	
+	    <section class="events">
+	
+	      <h1>Friday</h1>
+		  
+		  <a href="regulargroups.html#child_groups">
+	      <img src="img/friday_club_img.avif" width="178" height="253">
+		  </a>
+		  
+	      <p class="events-styling">
+			<a href="regulargroups.html#child_groups">Friday Club</a> <br>
+	        6:30pm - 7:30pm <br>
+	        Reception - Year 6
+	      </p>
+		  
+	    </section>
+	
+      </div>
+	
+    </section>
+
+
+
+   
+  </div>
+  
+  <!-- Footer -->
+  <footer> 
+  
+    <div class="standard-text">
+      Great Blakenham Baptist Church <br>
+      Chapel Lane <br>
+      Great Blakenham <br>
+      Suffolk <br>
+      IP6 0JJ <br>
+​      <br>
+      01473 839785 <br>
+      blakenhambaptist@outlook.com
+	</div>
+	
+    <iframe id="google-maps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d668.0578925354898!2d1.1031728398774574!3d52.10800343403751!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d9a3d099458f91%3A0x6f0c8781be5f0826!2sGreat%20Blakenham%20Baptist%20Church!5e0!3m2!1sen!2suk!4v1741631992839!5m2!1sen!2suk"
+	width="314" height="234" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+	
+  </footer>
+ 
+ </div>
+ 
+</body>
+</html>

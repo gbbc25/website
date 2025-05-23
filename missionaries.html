@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Blakenham Baptist</title>
+ 
+ <meta name="description" 
+       content="Welcome to Great Blakenham Baptist Church!">
+ <meta name="keywords" 
+       content="gbbc, church, Great Blakenham, Great Blakenham Baptist Church">
+ <link rel="stylesheet" href="css/style.css">
+ <script src="js/script.js" defer></script> <!-- Linking external JavaScript -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+
+    <script>
+        function toggleMobileNav() {
+          const nav = document.getElementById("mobileNav");
+          nav.classList.toggle("active");
+        }
+        </script>
+</head>
+<body>
+ <!-- Page Container -->
+ <div id="container">
+ 
+  <!-- Header -->
+  <header> 
+   <!-- Logo --> 
+   <img id="logo" src="img/logo-img.png" width="233" height="178">
+   
+   <div id="header-right">
+   <!-- Navigation -->
+   <nav>
+	<div class="burger" onclick="toggleMobileNav()">☰</div>
+	<ul class="menu desktop-menu">
+	  <li ><a href="index.html">Home</a></li>
+	  <li class="dropdown active">
+		<a href="aboutus.html">About Us</a>
+		<ul class="dropdown-menu">
+		  <li ><a href="beliefs.html">What We Believe</a></li>
+		  <li ><a href="team.html">Meet The Team</a></li>
+		  <li class="active"><a href="missionaries.html">Missionaries</a></li>
+		</ul>
+	  </li>
+	  <li class="dropdown">
+		<a href="services.html">Services</a>
+		<ul class="dropdown-menu">
+		  <li><a href="sundayschool.html">Sunday School & Crèche</a></li>
+		</ul>
+	  </li>
+	  <li><a href="regulargroups.html">Regular Groups</a></li>
+	</ul>
+  
+	<!-- Mobile Overlay -->
+	<div class="mobile-nav-overlay" id="mobileNav">
+	  <div class="close-btn" onclick="toggleMobileNav()">×</div>
+	  <ul class="mobile-menu">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="aboutus.html">About Us</a></li>
+		<li><a href="beliefs.html">What We Believe</a></li>
+		<li><a href="team.html">Meet The Team</a></li>
+		<li><a href="missionaries.html">Missionaries</a></li>
+		<li><a href="services.html">Services</a></li>
+		<li><a href="sundayschool.html">Sunday School & Crèche</a></li>
+		<li><a href="regulargroups.html">Regular Groups</a></li>
+	  </ul>
+	</div>
+  </nav>
+   <div id="service-info">
+        <p>Morning Service - 10:45 am<br>
+		   <br>
+		   Evening Service - 6:30 pm (at <a href="https://mickfieldec.co.uk/" target="_blank">MEC</a>)</p>
+   </div>
+   </div>
+  </header>
+
+  <section id="mobile-service-times">
+	<p>Morning Service - 10:45 am<br>
+		<br>
+		Evening Service - 6:30 pm (at <a href="https://mickfieldec.co.uk/" target="_blank">MEC</a>)</p>
+  </section>
+  
+  <!-- Main Content -->
+  <div>
+      <h1 class="heading-styling">Missionaries</h1>
+      <section id="missionary-content">
+
+
+      <h2 class="chelsea-market-regular">"Go therefore and make disciples of all nations, baptizing them in the name of the
+          Father and of the Son and of the Holy Spirit, teaching them to observe all that I have commanded you." MATTHEW
+          28:19-20</h2>
+
+      <p class="missionary-text-styling">We support 6 missionaries / organisations both financially (or through donating items) and through prayer
+          support. this is one of the ways we tell the Good News to "all nations" as Jesus commanded. Please join us in
+          praying for these Christian missions, whether they are going to the unreached world, providing relief or
+          education (abroad and at home), that they are able to proclaim the Good News effectively in their
+          situation.</p>
+
+      <p class="missionary-text-styling">All church attendees are part of the Great Commission (see Matthew 28) and are actively encouraged to share
+          the Gospel.</p>
+
+
+          <section id="missionary-links">
+
+              <div class="missionary-contents-row">
+                  <div class="missionary">
+                      <img src="img/albania.avif" width="110" height="110">
+                      <div>
+                      <h3>Albanian Evangelical Mission</h3>
+                      <!-- Java script button -->
+                      <button class="website-button" onclick="openWebsite('https://aemission.org/')">Website</button>
+                      </div>
+                  </div>
+                  <div class="missionary">
+                      <img src="img/asialink.avif" width="110" height="110">
+                      <div>
+                      <h3>Asia Link</h3>
+                      <!-- Java script button -->
+                      <button class="website-button" onclick="openWebsite('https://www.asialink.org/')">Website</button>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="missionary-contents-row">
+                  <div class="missionary">
+                      <img src="img/zambesi.avif" width="110" height="110">
+                      <div>
+                          <h3>Zambesi Mission</h3>
+                          <!-- Java script button -->
+                          <button class="website-button" onclick="openWebsite('https://zambesimission.org/')">Website</button>
+                      </div>
+                  </div>
+                  <div class="missionary">
+                      <img src="img/gracebaptist.avif" width="110" height="110">
+                      <div>
+                          <h3>Grace Baptist Mission</h3>
+                          <!-- Java script button -->
+                          <button class="website-button" onclick="openWebsite('https://www.gbm.org.uk/')">Website</button>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="missionary-contents-row">
+                  <div class="missionary">
+                      <img src="img/find.avif" width="110" height="110">
+                      <div>
+                          <h3>Families In Need</h3>
+                          <!-- Java script button -->
+                          <button class="website-button" onclick="openWebsite('https://www.findipswich.org.uk/')">Website</button>
+                      </div>
+                  </div>
+                  <div class="missionary">
+                      <img src="img/slavic.avif" width="110" height="110">
+                      <div>
+                          <h3>Slavic Gospel Association</h3>
+                          <!-- Java script button -->
+                          <button class="website-button" onclick="openWebsite('https://sga.org.uk/')">Website</button>
+                      </div>
+                  </div>
+              </div>
+          </section>
+
+
+      </section>
+
+   
+   
+  </div>
+  
+  <!-- Footer -->
+  <footer> 
+  
+    <div class="standard-text">
+      Great Blakenham Baptist Church <br>
+      Chapel Lane <br>
+      Great Blakenham <br>
+      Suffolk <br>
+      IP6 0JJ <br>
+        <br>
+      01473 839785 <br>
+      blakenhambaptist@outlook.com
+	</div>
+	
+    <iframe id="google-maps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d668.0578925354898!2d1.1031728398774574!3d52.10800343403751!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d9a3d099458f91%3A0x6f0c8781be5f0826!2sGreat%20Blakenham%20Baptist%20Church!5e0!3m2!1sen!2suk!4v1741631992839!5m2!1sen!2suk"
+	width="314" height="234" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+	
+  </footer>
+ 
+ </div>
+ 
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Blakenham Baptist</title>
+ 
+ <meta name="description" 
+       content="Welcome to Great Blakenham Baptist Church!">
+ <meta name="keywords" 
+       content="gbbc, church, Great Blakenham, Great Blakenham Baptist Church">
+ <link rel="stylesheet" href="css/style.css">
+ <script src="js/script.js" defer></script> <!-- Linking external JavaScript -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+
+    <script>
+        function toggleMobileNav() {
+          const nav = document.getElementById("mobileNav");
+          nav.classList.toggle("active");
+        }
+        </script>
+</head>
+<body>
+ <!-- Page Container -->
+ <div id="container">
+ 
+  <!-- Header -->
+  <header> 
+   <!-- Logo --> 
+   <img id="logo" src="img/logo-img.png" width="233" height="178">
+   
+   <div id="header-right">
+   <!-- Navigation -->
+   <nav>
+	<div class="burger" onclick="toggleMobileNav()">☰</div>
+	<ul class="menu desktop-menu">
+	  <li ><a href="index.html">Home</a></li>
+	  <li class="dropdown ">
+		<a href="aboutus.html">About Us</a>
+		<ul class="dropdown-menu">
+		  <li ><a href="beliefs.html">What We Believe</a></li>
+		  <li><a href="team.html">Meet The Team</a></li>
+		  <li><a href="missionaries.html">Missionaries</a></li>
+		</ul>
+	  </li>
+	  <li class="dropdown active">
+		<a href="services.html">Services</a>
+		<ul class="dropdown-menu">
+		  <li><a href="sundayschool.html">Sunday School & Crèche</a></li>
+		</ul>
+	  </li>
+	  <li><a href="regulargroups.html">Regular Groups</a></li>
+	</ul>
+  
+	<!-- Mobile Overlay -->
+	<div class="mobile-nav-overlay" id="mobileNav">
+	  <div class="close-btn" onclick="toggleMobileNav()">×</div>
+	  <ul class="mobile-menu">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="aboutus.html">About Us</a></li>
+		<li><a href="beliefs.html">What We Believe</a></li>
+		<li><a href="team.html">Meet The Team</a></li>
+		<li><a href="missionaries.html">Missionaries</a></li>
+		<li><a href="services.html">Services</a></li>
+		<li><a href="sundayschool.html">Sunday School & Crèche</a></li>
+		<li><a href="regulargroups.html">Regular Groups</a></li>
+	  </ul>
+	</div>
+  </nav>
+   <div id="service-info">
+        <p>Morning Service - 10:45 am<br>
+		   <br>
+		   Evening Service - 6:30 pm (at <a href="https://mickfieldec.co.uk/" target="_blank">MEC</a>)</p>
+   </div>
+   </div>
+  </header>
+  <section id="mobile-service-times">
+	<p>Morning Service - 10:45 am<br>
+		<br>
+		Evening Service - 6:30 pm (at <a href="https://mickfieldec.co.uk/" target="_blank">MEC</a>)</p>
+  </section>
+  
+  <!-- Main Content -->
+  <div>
+      <h1 class="heading-styling">Sunday Mornings</h1>
+      <section class="services-content">
+          <img src="img/crossinsky.avif" width="189" height="250" id="cross-in-sky">
+          <div>
+          <h2 class="services-title">Sunday Morning Service</h2>
+          <p>Our Sunday services are held on Chapel Lane in Great Blakenham at 10.45am every Sunday morning, where you
+              can expect a warm welcome, Bible-based teaching, Sunday Club & Creche. The Gospel is central and our
+              services include reading the Bible, praying, worshipping God and a sermon. Please join us for refreshments
+              after the service.</p>
+
+          <h2 class="services-title">Communion</h2>
+          <p>We usually have communion on the first Sunday of the month (this takes place during the morning service).
+              We welcome all who have trusted the Lord as their own personal saviour to our Communion meeting. It is a
+              simple service of remembrance of what Jesus did for us by dying for us on the cross and being raised to
+              life again the third day.</p>
+
+          <h2 class="services-title">All-Age Services</h2>
+          <p>This usually runs on the 3rd Sunday morning of the month - there is no Sunday school or organised crèche as
+              the children stay in for the whole service. This usually includes a quiz, memory verse & interactive
+              story.</p>
+
+          <h2 class="services-title">Sunday Evening Service</h2>
+          <p>We have an evening Service we meet at Mickfield Evangelical Church at 6.30pm. For directions, please see
+              the Mickfield Evangelical Church Website. All are very welcome to join us.</p>
+
+
+              <div id="services-pictures">
+                  <div>
+                      <img src="img/services-bible.avif" width="210" height="250" id="service-img1">
+                  </div>
+                  <div>
+                  <img src="img/servies-guitar.avif" width="210" height="250" id="service-img2">
+                  </div>
+                  <div>
+                  <img src="img/services-praying.avif" width="210" height="250" id="service-img3">
+                  </div>
+              </div>
+          </div>
+
+
+      </section>
+
+
+
+
+   
+   
+  </div>
+  
+  <!-- Footer -->
+  <footer> 
+  
+    <div class="standard-text">
+      Great Blakenham Baptist Church <br>
+      Chapel Lane <br>
+      Great Blakenham <br>
+      Suffolk <br>
+      IP6 0JJ <br>
+        <br>
+      01473 839785 <br>
+      blakenhambaptist@outlook.com
+	</div>
+	
+    <iframe id="google-maps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d668.0578925354898!2d1.1031728398774574!3d52.10800343403751!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d9a3d099458f91%3A0x6f0c8781be5f0826!2sGreat%20Blakenham%20Baptist%20Church!5e0!3m2!1sen!2suk!4v1741631992839!5m2!1sen!2suk"
+	width="314" height="234" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+	
+  </footer>
+ 
+ </div>
+ 
+</body>
+</html>
