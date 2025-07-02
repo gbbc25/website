@@ -564,13 +564,7 @@ footer {
   margin-bottom: 0;
 }
 
-.upcoming-event {
-  border: 2px solid lightblue;
-  /* Light blue border */
-  border-radius: 50px;
-  /* Curved corners */
-  padding: 30px;
-}
+
 
 
 #groups-coffee{
@@ -625,4 +619,65 @@ footer {
 
 .regular-item{
   padding-bottom:50px;
+}
+
+
+
+.upcoming-event {
+  display: flex;
+  flex-wrap: wrap; /* allows the items to wrap to the next line */
+
+  gap: 1rem;
+  padding: 1rem;
+
+}
+
+#barbecue-picture{
+  max-width: 100%;
+  height: auto;
+}
+
+.upcoming-text{
+  flex: 1 1 300px;
+  min-width: 300px;
+  max-width: 509px;
+
+  font-size: 1.3rem;
+  line-height: 1.3;
+}
+
+
+@media (max-width: 850px) {
+  .upcoming-event {
+    flex-direction: column;
+    align-items: center; /* center children horizontally */
+  }
+
+}
+
+
+
+#summer-barbecue{
+  background-color: beige;
+  padding: 10px;
+  
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem; /* space between text and image */
+
+  border-radius: 8px; /* optional: rounded corners */
+  align-items: center; /* vertical align if needed */
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.barbecue-info{
+  flex: 1 1 100px; /* allow text to shrink/grow but not below 300px */
+  max-width: 200px;
+  min-width:200px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.15;
+  
 }

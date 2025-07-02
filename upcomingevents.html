@@ -8,18 +8,14 @@
  <meta name="keywords" 
        content="gbbc, church, Great Blakenham, Great Blakenham Baptist Church">
  <link rel="stylesheet" href="css/style.css">
- <script src="js/script.js" defer></script> <!-- Linking external JavaScript -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
-    <script>
-        function toggleMobileNav() {
-          const nav = document.getElementById("mobileNav");
-          nav.classList.toggle("active");
-        }
-        </script>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+ <script>
+	function toggleMobileNav() {
+	  const nav = document.getElementById("mobileNav");
+	  nav.classList.toggle("active");
+	}
+	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 <body>
@@ -33,44 +29,47 @@
    
    <div id="header-right">
    <!-- Navigation -->
-   <nav> 
-    <ul class="menu">
-        <li><a href="/">Home</a></li>
-        <li class="dropdown">
-            <a href="aboutus.html">About Us</a>
-            <ul class="dropdown-menu">
-                <li><a href="beliefs.html">What We Believe</a></li>
-                <li><a href="team.html">Meet The Team</a></li>
-				<li><a href="missionaries.html">Missionaries</a></li>
-            </ul>
-        </li>
-		<li class="dropdown">
-            <a href="services.html">Services</a>
-            <ul class="dropdown-menu">
-                <li ><a href="sundayschool.html">Sunday School & Crèche</a></li>
-            </ul>
-        </li>
-		<li class="dropdown">
-            <a href="#">Regular Groups</a>
-            <ul class="dropdown-menu">
-                <li><a href="#">Children's Groups</a></li>
-				<li><a href="#">Coffee Morning</a></li>
-				<li><a href="#">Growth Groups & Prayer Meetings</a></li>
-            </ul>
-        </li>
-        <li class="active"><a href="upcomingevents.html">Upcoming Events</a></li>
-		<li class="dropdown">
-            <a >More</a>
-            <ul class="dropdown-menu">
-                <li><a href="#">Resources</a></li>
-                <li><a href="#">Questions</a></li>
-				<li><a href="#">Evangelism</a></li>
-				<li><a href="#">Contact</a></li>
-            </ul>
-        </li>
-		
-    </ul>
-   </nav>
+   <!-- Navigation -->
+   <nav>
+	<div class="burger" onclick="toggleMobileNav()">☰</div>
+	<ul class="menu desktop-menu">
+	  <li ><a href="/">Home</a></li>
+	  <li class="dropdown">
+		<a  href="aboutus.html">About Us</a>
+		<ul class="dropdown-menu">
+		  <li><a href="beliefs.html">What We Believe</a></li>
+		  <li><a href="team.html">Meet The Team</a></li>
+		  <li><a href="missionaries.html">Missionaries</a></li>
+		</ul>
+	  </li>
+	  <li class="dropdown">
+		<a href="services.html">Services</a>
+		<ul class="dropdown-menu">
+		  <li><a href="sundayschool.html">Sunday School & Crèche</a></li>
+		</ul>
+	  </li>
+	  <li><a href="regulargroups.html">Regular Groups</a></li>
+
+      <li class="active"><a href="upcomingevents.html">Upcoming Events</a></li>
+	</ul>
+  
+	<!-- Mobile Overlay -->
+	<div class="mobile-nav-overlay" id="mobileNav">
+	  <div class="close-btn" onclick="toggleMobileNav()">×</div>
+	  <ul class="mobile-menu">
+		<li><a href="/">Home</a></li>
+		<li><a href="aboutus.html">About Us</a></li>
+		<li><a href="beliefs.html">What We Believe</a></li>
+		<li><a href="team.html">Meet The Team</a></li>
+		<li><a href="missionaries.html">Missionaries</a></li>
+		<li><a href="services.html">Services</a></li>
+		<li><a href="sundayschool.html">Sunday School & Crèche</a></li>
+		<li><a href="regulargroups.html">Regular Groups</a></li>
+
+        <li><a href="upcomingevents.html">Upcoming Events</a></li>
+	  </ul>
+	</div>
+  </nav>
    <div id="service-info">
         <p>Morning Service - 10:45 am<br>
 		   <br>
@@ -78,39 +77,49 @@
    </div>
    </div>
   </header>
+
+  <section id="mobile-service-times">
+	<p>Morning Service - 10:45 am<br>
+		<br>
+		Evening Service - 6:30 pm (at <a href="https://mickfieldec.co.uk/" target="_blank">MEC</a>)</p>
+  </section>
   
   <!-- Main Content -->
   <div>
-      <h1 class="heading-styling">Upcoming events at Great Blakenham Baptist Church</h1>
-      <p>For the latest announcements and updates about upcoming events, please visit
-          <a href="https://www.facebook.com/profile.php?id=61572886522431"
-                                                           target="_blank">the Church's Facebook page.</a></p>
 
-      <section class="upcoming-event">
+    <h1 class="heading-styling">Upcoming Events</h1>
 
-          <h2 class="upcoming-event-title">Journey To Joy - an easter celebration</h2>
-          Friday 28th March 2025 ~ 6:00pm - 7:30pm <br>
-          @ Great Blakenham Baptist Church
+    <section class="upcoming-event">
+        
+        <div>
+        <img id="barbecue-picture" src="img/summer-barbecue.jpg" >
+        </div>
 
-          <p>Come along to our Easter event on Friday 28th March at 6pm. A fun evening for the whole family, food,
-              animals, crafts and more.</p>
+        <div class="upcoming-text">
 
-          <img src="img/journeytojoy.jpg">
+        
+        <p class="upcoming-p">
+            The Summer Barbecue is a free event (no need to book!), taking place here at Great Blakenham
+            Baptist Church! For directions, see <a href="#foot">here</a>. There is limited parking in the church car park, with
+            additional parking available across the road at 'E Rand & Sons Ltd'. Street parking is also possible. 
+        </p>
+        <p class="upcoming-p">
+            There will be face painting, glitter tattoos, garden games, and a tug of war. (Puppets Jeffy and Clive will
+            also be making a special appearance!) 
+        </p>
+        <p class="upcoming-p">
+            For refreshments, you can look forward to a BBQ, an ice-cream bar, and fruit punch. 
 
+        </p>
+        </div>
 
-      </section>
+    </section>
 
-
-
-
-
-
-   
    
   </div>
   
   <!-- Footer -->
-  <footer> 
+  <footer id="foot"> 
   
     <div class="standard-text">
       Great Blakenham Baptist Church <br>
@@ -118,7 +127,7 @@
       Great Blakenham <br>
       Suffolk <br>
       IP6 0JJ <br>
-        <br>
+​      <br>
       01473 839785 <br>
       blakenhambaptist@outlook.com
 	</div>
