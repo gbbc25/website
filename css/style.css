@@ -220,30 +220,83 @@ ul li:hover {
 
 /* Styling for entire 'What's On' section  */
 .whats-on-section{
+  justify-content: center;  /* Centers items horizontally */
 
 }
 
 /* Styling for individual activity section */
-.activity{
+.activitya{
+  background-color: rgb(187, 175, 153);
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
 
+.activityb{
+  background-color: rgb(209, 200, 182);
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 /* Styling for <h1> title of activity day */
 .activity-day{
-
+  margin: 0px;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 10px;
 }
 
 /* Styling for <h2> title of activity title */
 .activity-name{
-
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 /* Styling for activity's content - txt & img */
 .activity-content{
   display:flex;
-  
   justify-content: center;  /* Centers items horizontally */
   align-items: center;      /* Centers items vertically if needed */
+  flex-wrap: wrap;      /* Allows wrapping to new line when space is tight */
+  gap: 40px;
+}
+
+/* Styling for text only in activity's content */
+.activity-content p{
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+  font-kerning: none;
+  text-decoration: none;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-wrap: wrap;
+  overflow-wrap: normal;
+  overflow-wrap: break-word;
+
+  max-width: 400px;
+}
+
+#whats-on-title-section{
+  background-color: rgb(73, 149, 127);
+}
+
+.whats-on-title{
+  font-size: 40.4px;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(255, 255, 255);
+  font-kerning: none;
+  text-decoration: none;
+  text-shadow: rgba(0, 0, 0, 0.325) 0px 1.51499px 6.4387px;
+  line-height: 56px;
+  text-align: center;
+  margin: 0px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
 }
 
 
