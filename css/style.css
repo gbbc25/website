@@ -38,6 +38,7 @@ header {
   display: flex;
   position: sticky;
   top: 0;
+  width: 100%;
 }
 
 /* Remove default link styling */
@@ -70,7 +71,14 @@ ul li:hover {
   transition: 0.3s;
 }
 
+
+/* When menu is open, prevent scrolling */
+body.menu-open {
+  overflow: hidden;
+}
+
 #hamburger-icon div{
+  
   width: 35px;
   height: 3px;
   background-color: black;
@@ -198,12 +206,15 @@ ul li:hover {
 
 /* Styling for service times section */
 #service-times{
-  background-color: rgb(73, 149, 127);
+  background-color: #364c1e;
   display: flex;
   flex-wrap: wrap;          /* Allows wrapping to new line when space is tight */
   justify-content: center;  /* Centers items horizontally */
   align-items: center;      /* Centers items vertically if needed */
   gap: 0px 75px;
+
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
   
 }
 
@@ -217,6 +228,8 @@ ul li:hover {
   text-decoration: none;
   text-shadow: rgba(0, 0, 0, 0.325) 0px 1.51499px 6.4387px;
   line-height: 56px;
+
+  
 }
 
 
@@ -235,13 +248,13 @@ ul li:hover {
 
 /* Styling for individual activity section */
 .activitya{
-  background-color: rgb(187, 175, 153);
+  background-color: #a3b18a;
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
 .activityb{
-  background-color: rgb(209, 200, 182);
+  background-color: 	#588157;
   padding-top: 25px;
   padding-bottom: 25px;
 }
@@ -259,6 +272,11 @@ ul li:hover {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.activity-time{
+  text-align: center;
+  padding-top: -50px;
 }
 
 /* Styling for activity's content - txt & img */
@@ -287,7 +305,7 @@ ul li:hover {
 }
 
 #whats-on-title-section{
-  background-color: rgb(73, 149, 127);
+  background-color: #364c1e;
 }
 
 .whats-on-title{
@@ -318,11 +336,102 @@ ul li:hover {
 
 #services-section{
   justify-content: center;  /* Centers items horizontally */
-  background-color: rgb(187, 175, 153);
+  background-color: #dad7cd;
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
+
+
+
+
+/*                            */
+/* Leadership section styling */
+/* TODO: (1) fix image quality, (2) fix img border */
+
+/* Overarching leadership section */
+#leadership-section{
+
+}
+
+/* Container for pastor section */
+.pastor-section{
+  background-color: rgb(187, 175, 153);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  /* Centers items horizontally */
+  column-gap: 90px;
+  row-gap: 50px;
+  padding-top: 20px;
+}
+
+/* Container for elders section */
+.elders-section{
+  background-color: rgb(209, 200, 182);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  /* Centers items horizontally */
+  column-gap: 90px;
+  row-gap: 50px;
+  padding-top: 75px;
+}
+
+/* Styling for container of leader name, role, and bio*/
+.leader-content{
+  max-width: 400px;
+}
+
+/* Styling for <h1> 'Leadership' header */
+#leadership-section-header{
+  font-size: 50px;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(50, 44, 39);
+  text-decoration: none;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: rgb(187, 175, 153);
+  margin: 0px;
+}
+
+/* Styling for <h2> title of leadership name */
+.leader-name{
+  margin-top: 0px;
+}
+
+/* Styling for <h3> title of leadership role */
+.leader-role{
+  font-size: 26.6667px;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 28px;
+  letter-spacing: 0em;
+  color: rgb(50, 44, 39);
+}
+
+/* Styling for <p> containing leader bio */
+.leader-bio{
+  font-size: 18.86667px;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 28px;
+  letter-spacing: 0em;
+  color: rgb(50, 44, 39);
+}
+
+/* Styling for leader images */
+.leader-photo{
+  width: clamp(250px, 50vw, 369px);
+  height: auto;
+  object-fit: contain;
+  max-width: 369px;
+  max-height: 397px;
+}
 
 
 
