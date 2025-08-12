@@ -152,13 +152,46 @@ body.menu-open {
 /* Home section styling */
 /*                      */
 
+#service-times-section{
+  background-color: #364c1e;
+  display: flex;
+  flex-wrap: wrap;          /* Allows wrapping to new line when space is tight */
+  justify-content: center;  /* Centers items horizontally */
+  align-items: center;      /* Centers items vertically if needed */
+
+  column-gap: 75px;
+  row-gap: 0px;
+
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+  
+}
+
+.service-title{
+  font-size: 40.4px;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(255, 255, 255);
+  font-kerning: none;
+  text-decoration: none;
+  text-shadow: rgba(0, 0, 0, 0.325) 0px 1.51499px 6.4387px;
+  line-height: 56px;
+
+  font-size: clamp(1rem, 5vw, 3rem); /* min, preferred, max size */
+  white-space: nowrap;
+
+  
+}
+
+
 #welcome {
   background-color: rgb(28, 27, 21);
   display: flex;
   flex-wrap: wrap;      /* Allows wrapping to new line when space is tight */
   justify-content: center;  /* Centers items horizontally */
   align-items: center;      /* Centers items vertically if needed */
-  gap: 75px;
+  column-gap: 75px;
+  row-gap: 20px;
   padding: 75px;    /* space inside the section edges */
 }
 
@@ -204,33 +237,7 @@ body.menu-open {
 }
 
 
-/* Styling for service times section */
-#service-times{
-  background-color: #364c1e;
-  display: flex;
-  flex-wrap: wrap;          /* Allows wrapping to new line when space is tight */
-  justify-content: center;  /* Centers items horizontally */
-  align-items: center;      /* Centers items vertically if needed */
-  gap: 0px 75px;
 
-  border-top: 5px solid white;
-  border-bottom: 5px solid white;
-  
-}
-
-/* Styling for service times text */
-.service-title{
-  font-size: 40.4px;
-  font-weight: 400;
-  font-style: normal;
-  color: rgb(255, 255, 255);
-  font-kerning: none;
-  text-decoration: none;
-  text-shadow: rgba(0, 0, 0, 0.325) 0px 1.51499px 6.4387px;
-  line-height: 56px;
-
-  
-}
 
 
 
@@ -341,6 +348,41 @@ body.menu-open {
   padding-bottom: 25px;
 }
 
+#services-img{
+  width: 388px;
+  height: auto;
+}
+
+
+
+
+
+/*                                 */
+/* About us section header styling */
+/*                                 */
+
+#about-us-title-section{
+  background-color: #364c1e;
+}
+
+.about-us-title{
+  font-size: 40.4px;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(255, 255, 255);
+  font-kerning: none;
+  text-decoration: none;
+  text-shadow: rgba(0, 0, 0, 0.325) 0px 1.51499px 6.4387px;
+  line-height: 56px;
+  text-align: center;
+  margin: 0px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+}
+
 
 
 
@@ -431,8 +473,112 @@ body.menu-open {
   object-fit: contain;
   max-width: 369px;
   max-height: 397px;
+  
 }
 
 
 
 
+
+/*                         */
+/* Beliefs section styling */
+/*                         */
+
+#beliefs-section{
+  background-color: #d88c9a;
+}
+
+#beliefs-header{
+  font-size: 50px;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(50, 44, 39);
+  text-decoration: none;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  margin: 0px;
+}
+
+#beliefs-content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  /* Centers items horizontally */
+  column-gap: 90px;
+  row-gap: 50px;
+  padding-top: 20px;
+}
+
+#beliefs-paragraph{
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 28px;
+  letter-spacing: 0em;
+  color: rgb(50, 44, 39);
+  max-width: 400px;
+}
+
+
+
+
+
+/*                              */
+/* Partnerships section styling */
+/*                              */
+
+#partnerships-section{
+  background-color: lightgrey;
+  justify-content: center;
+  
+}
+
+#partnerships-content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  padding-top: 50px;
+
+}
+
+#partnerships-header{
+  font-size: 50px;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(50, 44, 39);
+  text-decoration: none;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  margin: 0px;
+}
+
+.partner{
+  text-align: center;
+  max-width: 200px;
+}
+
+.partner-header{
+  font-weight: normal;
+  font-size: 22px;
+  border-bottom: 1px solid black;
+  padding-bottom: 12px;
+}
+
+.partner-content{
+  
+}
+
+
+
+
+
+/*                              */
+/* Missionaries section styling */
+/*                              */
