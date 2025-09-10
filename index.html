@@ -27,57 +27,72 @@
 
 		<!-- Header -->
 		<header>
+
+			<!-- Default Desktop navigation -->
 			<nav>
 				<ul>
 					<li><a href="#home-section">Home</a></li>
-					<li><a href="#whats-on-section">What's On</a></li>
-					<li><a href="#services-section">Services</a></li>
+					<li><a href="#test-whats-on">What's On</a></li>
+					<li><a href="#test-sunday-section">Services</a></li>
 					<li><a href="#about-us-section">About Us</a></li>
 					<li><a href="/about">Upcoming Events</a></li>
-					<li><a href="/contact">Contact Us</a></li>
+					<li><a href="#contact-us-page">Contact Us</a></li>
 				</ul>
 			</nav>
 
+			<!-- Mobile navigation - curtain menu overlay when burger menu pressed -->
+			<div id="overlay">
+				<ul class="mobile-menu">
+					<li><a href="#home-section">Home</a></li>
+					<li><a href="#test-whats-on">What's On</a></li>
+					<li><a href="#test-sunday-section">Services</a></li>
+					<li><a href="#about-us-section">About Us</a></li>
+					<li><a href="/about">Upcoming Events</a></li>
+					<li><a href="#contact-us-page">Contact Us</a></li>
+			    </ul>
+			</div>
+
+            <!-- Hamburger button for mobile menu -->
 			<div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+				<p id="hamburger-text">Menu</p>
 				<div class="bar1"></div>
 				<div class="bar2"></div>
 				<div class="bar3"></div>
-				<ul class="mobile-menu">
-					<li><a href="/">Home</a></li>
-					<li><a href="/about">What's On</a></li>
-					<li><a href="/contact">Services</a></li>
-					<li><a href="/">About Us</a></li>
-					<li><a href="/about">Upcoming Events</a></li>
-					<li><a href="/contact">Contact Us</a></li>
-				</ul>
 			</div>
+
+			<!-- TODO note - if on mobile overlay and manually resize screen - hamburger idsappears and u are stuck-->
 
 		</header>
 
 		<!-- Main Content -->
 		<div>
 
+			<button onclick="topFunction()" id="TopButton" title="Go to top">^</button> 
+
 			<!-- home section  -->
+			 <!-- TODO redesign home page. Ideas: -->
+			<!-- TODO  Include logo, name, and service times at top-->
 			<section id="home-section">
 
-				<section id="service-times-section">
+				<div id="home-title-banner">
+					<h1>Great Blakenham Baptist Church</h1>
+					<h2>Sundays at 10:45am</h2>
 
-					<h1 class="service-title">Morning Service 10:45 AM</h1>
-
-					<h1 class="service-title">Evening Service 6:30 PM (MEC)</h1>
-
-				</section>
+				</div>
 
 			    <div id="welcome">
                     
 					<!-- exterior church photo -->
-				    <img id="church-photo" src="img/church-photo.avif" alt="Exterior photo of the church.">
+					
+					<img id="church-photo" src="img/church-photo.avif" alt="Exterior photo of the church.">
+
+				    
 
 					<!-- introduction paragraph -->
-					<div>
-						<h1 id="welcome-title">
-							Great Blakenham Baptist Church
-						</h1>
+					<div class="box">
+						<!--<h1 id="welcome-title"> -->
+						<!--	Great Blakenham Baptist Church-->
+						<!--</h1>-->
 
 						<p id="welcome-paragraph">
 							A really warm welcome to GBBC. Whether you're new to the area, have lived here 
@@ -95,123 +110,232 @@
 			</section>
 
 
-			<!-- what's on section  -->
-			<section id="whats-on-section">
+			
 
-				<!-- what's on at gbbc title goes here -->
-				<div id="whats-on-title-section">
 
-					<h1 class="whats-on-title">What's on when at GBBC</h1>
-					
+            <!-- TODO this is a test section -->
+			<section id="test-whats-on" class="page-border">
+
+				<h1 id="test-whats-on-title">Weekly events at GBBC</h1>
+
+				<!-- Prayer Meeting -->
+                <div class="test-event">
+
+				    <img id="test-tuesday-event-img" src="img/praying-over-bible.avif" alt="Someone praying.">
+
+					<div class="test-content">
+						<h2 class="test-activity-name">Prayer Meeting</h2>
+						<h3 class="test-activity-date">Tuesday 2pm</h3>
+						<p class="test-paragraph">We get together at the church each week for our prayer meetings on a Tuesday
+						   afternoon for an hour, 2:00pm - 3:00pm. Here we pray for each other, our church,
+						   and the world. Everyone welcome.
+						</p>
+					</div>
+
+				</div>
+
+				<!-- Coffee Morning -->
+				<div class="test-event">
+
+				    <img id="test-coffee-morning-img" src="img/coffee-stock-img.jpg" alt="Cup of coffee.">
+
+					<div class="test-content">
+						<h2 class="test-activity-name">Coffee Morning</h2>
+						<h3 class="test-activity-date">Wednesday 10am</h3>
+						<p class="test-paragraph">Our coffee Morning runs every Wednesday from 10am to 12 noon at the church hall. All
+							are welcome for coffee, chat and games. A little time is given to a short Bible story with discussion and 
+							a prayer at the end.
+						</p>
+					</div>
+
 				</div> 
 
-				<!-- Tuesday - Prayer Meeting -->
-				<section class="activitya">
+				<!-- Games Night -->
+				<div class="test-event">
 
-					<h1 class="activity-day">Tuesday</h1>
-					<h2 class="activity-name">Prayer Meeting  2-3pm</h2>
-					<h3 class="activity-time">(2-3pm)</h3>
-					<div class="activity-content">
-						<p>
-							We get together at the church each week for our prayer meetings on a Tuesday
-							afternoon for an hour, 2:00pm - 3:00pm. Here we pray for each other, our church,
-							and the world. Everyone welcome.
+				    <img id="test-games-night-img" src="img/board-games-stock-img.jpg" alt="Board games.">
+
+					<div class="test-content">
+						<h2 class="test-activity-name">Men's Games Night</h2>
+						<h3 class="test-activity-date">Wednesday 7:30-9:30pm</h3>
+						<p class="test-paragraph">Men's games night at the church hall on Wednesday 7:30 pm to 9:30pm.
 						</p>
-						
-						<img id="tuesday-prayer-img" src="img/praying-over-bible.avif" alt="Someone praying.">
 					</div>
 
-				</section>
+				</div> 
 
-				<!-- Wednesday - Coffee Morning & Men's Game Night -->
-				<section class="activityb">
+				<!-- Growth Groups -->
+                <div class="test-event">
 
-					<h1 class="activity-day">Wednesday</h1>
-					<h2 class="activity-name">Coffee Morning  10am-noon</h2>
-					<div class="activity-content">
-						<p>
-							Our coffee Morning runs every Wednesday from 10am to 12 noon at the church hall. All
-							are welcome for coffee, chat and games.
-							<br><br>
-							A little time is given to a short Bible story with discussion and a prayer at the end.
-						</p>
-						
-						<img id="tuesday-prayer-img" src="img/praying-over-bible.avif" alt="Someone praying.">
-					</div>
+				    <img id="test-tuesday-event-img" src="img/praying-over-bible.avif" alt="Someone praying.">
 
-					<h2 class="activity-name">Men's Games Night  7:30-9:30pm</h2>
-					<div class="activity-content">
-						<p>
-							Men's games night at the church hall on Wednesday 7:30 pm to 9:30pm.
-						</p>
-						
-						<img id="tuesday-prayer-img" src="img/praying-over-bible.avif" alt="Someone praying.">
-					</div>
-
-				</section>
-
-				<!-- Thursday - Growth Groups -->
-				<section class="activitya">
-
-					<h1 class="activity-day">Thursday</h1>
-					<h2 class="activity-name">Growth Groups</h2>
-				
-					<div class="activity-content">
-						<p>
-							We get together each week for our "Growth Group" meetings. We start informally with tea
+					<div class="test-content">
+						<h2 class="test-activity-name">Growth Groups</h2>
+						<h3 class="test-activity-date">Thursday 10:15am  & 7:45pm</h3>
+						<p class="test-paragraph">We get together each week for our "Growth Group" meetings. We start informally with tea
 							and biscuits, and follow this with a Bible study and prayer. Anyone is welcome 
 							to join us. 
                             <br><br>
 							One group meets at 10am on Thursday in the church hall. Another group meets at 7:45pm in a
 							member's home.
 						</p>
-						
-						<img id="tuesday-prayer-img" src="img/praying-over-bible.avif" alt="Someone praying.">
 					</div>
 
-				</section>
+				</div>
 
-				<!-- Friday - Friday Club -->
-				<section class="activityb">
+				<!-- Friday Club -->
+                <div class="test-event">
 
-					<h1 class="activity-day">Friday</h1>
-					<h2 class="activity-name">Friday Club</h2>
-					<div class="activity-content">
-						<p>
-							This is held every Friday evening (term-time) from 6:30pm for one hour in the church's
+				    <img id="test-tuesday-event-img" src="img/praying-over-bible.avif" alt="Someone praying.">
+
+					<div class="test-content">
+						<h2 class="test-activity-name">Friday Club</h2>
+						<h3 class="test-activity-date">Friday 6:30pm</h3>
+						<p class="test-paragraph">This is held every Friday evening (term-time) from 6:30pm for one hour in the church's
 							back hall for Primary School aged children.
 						</p>
-						
-						<img id="tuesday-prayer-img" src="img/praying-over-bible.avif" alt="Someone praying.">
 					</div>
 
-				</section>
+				</div>
+
+
 
 			</section>
 
-            <!-- Services Section -->
-			<section id="services-section">
-				<h1 class="activity-day">Sunday Services</h1>
 
-				<div class="activity-content">
-						<p>
-							Our Sunday services are held on Chapel Lane in Great Blakenham at 10.45am every 
-							Sunday morning, where you can expect a warm welcome, Bible-based teaching, Sunday
-							Club & Creche. The Gospel is central and our services include reading the Bible, 
-							praying, worshipping God and a sermon. Please join us for refreshments after the service.
-						</p>
 
-						<img id="services-img" src="img/treeimg.jpg" >
+            <!-- TODO:   services section to include: -->
+			<!-- TODO:   (1) Service times and location and link "Get directions" for google maps -->
+			<!-- TODO:   (2)  General description -->
+			<!-- TODO: -->
+
+
+
+			<!-- TODO this is a test section -->
+			<section id="test-sunday-section" class="page-border">
+				<!-- Title -->
+				<h1 id="test-sunday-section-title">Sunday Services</h1>
+
+				<section id="morning-evening-details">
+
+					<!-- Morning Service Details -->
+					<div class="service-time-box">
+
+						<div>
+							<h2>Morning Service at 10:45AM</h2>
+
+							<p>
+								Chapel Ln,<br>
+							    Great Blakenham,<br>
+								Ipswich IP6 0JJ
+							</p>
+
+							<a href="https://maps.app.goo.gl/uciuQApCqht1f8z67" target="_blank">Get Directions -></a>
+
+						</div>
 						
-				</div>
+						<img id="blakenham-logo" src="img/logo-img.png">
+
+					</div>
+
+					<!-- Evening Service Details -->
+					<div class="service-time-box">
+
+						<div class="service-time-box-text">
+							<h2>Evening Service at 6:30PM</h2>
+
+							<p>
+								We join Mickfield Evangelical Church for their evening service through our partnership with them.
+							</p>
+
+							<a href="https://mickfieldec.co.uk/" target="_blank">More Info -></a>
+
+						</div>
+						
+						<img id="mickfield-logo" src="img/mickfieldlogo.png">
+
+					</div>
+
+				</section>
+				
+
+				<section class="test-morning-service-details">
+
+					<img id="morning-service-img" src="img/stock-reading-bible-together.jpg">
+
+					<p id="test-morning-service-details-bio">
+						Our <b>Sunday Morning service</b> are held on Chapel Lane in Great Blakenham at 10.45am every 
+						Sunday, where you can expect a warm welcome, Bible-based teaching, Sunday
+						Club & Creche. The Gospel is central and our services include reading the Bible, 
+						praying, worshipping God, and a sermon. Please join us for refreshments after the service.
+						<br><br>
+						We also have an <b>all-age-service</b> usually on the 3rd Sunday morning of the month - there is no Sunday school or 
+						organised crèche as the children stay in for the whole service. This usually includes a 
+						quiz, memory verse & interactive story.
+					</p>
+
+					
+				</section>
+
+				<section class="test-morning-service-details">
+
+					<img id="morning-service-img" src="img/stock-reading-bible-together.jpg">
+
+					<p id="test-morning-service-details-bio">
+						<b>New Here?</b> We would love to welcome you this Sunday!
+						<br><br>
+						If you are driving, there is limited car parking outside the Church. Alternatively, you can park
+						opposite at 'E Rand & Sons'. Entrance to the church is usually through the side entrance on the left
+						of the building. You should be welcomed at the entrance - if not - make your way through to the main
+						hall. Please don't feel pressured to join in on anything such as the singing if you don't feel
+						comfortable doing so.
+						<br><br>
+						If you would like more information on what goes on during our service, please see the 'Contact'
+						section to get our email/mobile.
+
+					</p>
+
+					<div id="service-faq">
+						<button class="accordion">Is there parking?</button>
+						<div class="panel">
+							<p>If you are driving, there is limited car parking outside the Church. Alternatively, you can park
+								opposite at 'E Rand & Sons'.
+							</p>
+						</div>
+
+						<button class="accordion">Where should I go when I arrive?</button>
+						<div class="panel">
+							<p>Entrance to the church is usually through the side door on the left of the building. You
+								should be greeted at the door - if not, make your way to the main hall which is immediately on
+								your right after entering through the side door.
+							</p>
+						</div>
+
+						<button class="accordion">Am I required to partake in anything during the service?</button>
+						<div class="panel">
+							<p>No. There is no pressure to join in on anything (such as singing) that you do not feel comfortable
+								doing so.
+							</p>
+						</div>
+
+					</div>
 
 				
 
+
+					
+				</section>
+
+
+
+				
 			</section>
+			 
+            
 
 
 			<!-- About Us Section -->
-			<section id="about-us-section">
+			<section id="about-us-section" class="page-border">
 
 				<!-- About us Title and potentially navigation-->
 				<div id="about-us-title-section">
@@ -270,7 +394,9 @@
                     <h1 id="beliefs-header">What we believe</h1>
 
 					<div id="beliefs-content">
-						<!-- Photo -->
+
+						<img class="stock-cross" src="img/stock-cross.jpg">
+
 						<p id="beliefs-paragraph">
 							We believe the staggering, life-changing good news that Jesus Christ is the King of the universe, and though 
 							we have failed in our lives, fallen from grace, and fought against him, he has entered our lives, brought 
@@ -289,76 +415,67 @@
 
 					<h1 id="partnerships-header">Partnerships</h1>
 
-					<div id="partnerships-content">
-						<!-- Mickfield Evangelical Church -->
-						<div class="partner">
-						
-							<img src="img/mec-church.avif" width="200" height ="200">
-							
-							<h2 class="partner-header">MEC</h2>
-							
-							<p class="partner-content">
-							
-								MICKFIELD EVANGELICAL CHURCH
-								<br><br>
-								
-								We are currently partnered with Mickfield Evangelical Church, which is where our 
-								Sunday evening services are held. Please visit their website to find out more:
-								<a href="https://mickfieldec.co.uk/" target="_blank">https://mickfieldec.co.uk/</a>
-								
-							<p>
-							
-						</div>
-				
-						<!-- Association of Grace Baptist Churches -->
-						<div class="partner">
-						
-							<img src="img/eagbc-logo.avif" width="200" height ="200">
-							
-							<h2 class="partner-header">EAGBC</h2>
-							
-							<p class="partner-content">
-							
-								THE ASSOCIATION OF GRACE BAPTIST CHURCHES (EAST ANGLIA)
-								<br><br>
-		
-								Great Blakenham Baptist Church is affiliated with the Association of Grace Baptist Churches
-								(East Anglia) who seek to promote fellowship between churches for encouragement, evangelism
-								and the glory of God. More information is available on their website: 
-								<a href="https://www.grace-ea.uk/" target="_blank">https://www.grace-ea.uk/</a>
-								
-							<p>
-							
-						</div>
-				
-						<!-- Fellowship of Independent Evangelical Churches -->
-						<div class="partner">
-						
-							<img src="img/fiec-logo.avif" width="200" height ="200">
-							
-							<h2 class="partner-header">FIEC</h2>
-							
-							<p>
-							
-								FELLOWSHIP OF INDEPENDENT EVANGELICAL CHURCHES
-								<br><br>
+					<!-- Mickfield Evangelical Church -->
+					<div class="test-event">
 
-								Great Blakenham Baptist Church also has links with the Fellowship of Independent Evangelical Churches (FIEC)
-								who unite independent churches through the gospel to wok together to reach Britain: 
-								<a href="https://fiec.org.uk/" target="_blank">https://fiec.org.uk/</a>
-								
-							<p>
-							
+						<img src="img/mec-church.avif" class="partner-img">
+
+						<div class="test-content">
+							<h2 class="test-activity-name">Mickfield Evangelical Church</h2>
+							<h3 class="test-activity-date">(MEC)</h3>
+							<p class="test-paragraph">We are currently partnered with Mickfield Evangelical Church, which is where our 
+							Sunday evening services are held. Please visit their website to find out more:
+							<a href="https://mickfieldec.co.uk/" target="_blank">https://mickfieldec.co.uk/</a>
+							</p>
 						</div>
 
 					</div>
+
+					<!-- Association of Grace Baptist Churches -->
+					<div class="test-event">
+
+						<img src="img/eagbc-logo.avif" class="partner-img">
+
+						<div class="test-content">
+							<h2 class="test-activity-name">The Association Of Grace Baptist Churches (East Anglia)</h2>
+							<h3 class="test-activity-date">(EAGBC)</h3>
+							<p class="test-paragraph">Great Blakenham Baptist Church is affiliated with the Association of Grace Baptist Churches
+							(East Anglia) who seek to promote fellowship between churches for encouragement, evangelism
+							and the glory of God. More information is available on their website: 
+							<a href="https://www.grace-ea.uk/" target="_blank">https://www.grace-ea.uk/</a>
+							</p>
+						</div>
+
+					</div>
+
+					<!-- FIEC -->
+					<div class="test-event">
+
+						<img src="img/fiec-logo.avif" class="partner-img">
+
+						<div class="test-content">
+							<h2 class="test-activity-name">Fellowship Of Independent Evangelical Churches</h2>
+							<h3 class="test-activity-date">(FIEC)</h3>
+							<p class="test-paragraph">Great Blakenham Baptist Church also has links with the Fellowship of Independent Evangelical Churches (FIEC)
+							who unite independent churches through the gospel to wok together to reach Britain: 
+							<a href="https://fiec.org.uk/" target="_blank">https://fiec.org.uk/</a>
+							</p>
+						</div>
+
+					</div>
+				
+						
+				
+						
+
+					
 
 					
 				</section>
 
 
 				<!-- Missionaries -->
-				<section id="missionaries-section">
+				<section id="missionaries-section" >
 
 					<h1 id="missionaries-header">Missionaries</h1>
 
@@ -367,6 +484,60 @@
 
 
 			</section> <!-- about-us section close tag -->
+
+
+			<!-- Contact us Page-->
+
+
+		    <section id="contact-us-page" class="page-border">
+				<h1 class="page-header">Contact Us</h1>
+
+				<div id="contact-us-page-content">
+
+					<!-- Address -->
+					<div class="cup-text">
+						<div class="cup-title">
+							<img src="img/stock-church-img.jpg" height="100" width="100">
+							<h2>Address</h2>
+						</div>
+						Great Blakenham Baptist Church,<br>
+						Chapel Lane, Great Blakenham,<br>
+						Suffolk, IP6 0JJ<br>
+					</div>
+
+					
+					<!-- Enquires -->
+					<div class="cup-text">
+						<div class="cup-title">
+							<img id="email-stock-img" src="img/stock-email-img.jpg"  >
+							<h2>Email/Mobile</h2>
+						</div>
+						<p>
+							blakenhambaptist@outlook.com<br>
+							01473 839785 
+						</p>
+					</div>
+
+				</div>
+
+				<div id="next-step">
+					<h2>What next?</h2>
+					<p>
+						Join us this Sunday for our morning service at 10:45AM. 
+						<br><br>
+						Check out our Facebook page here the for latest updates.
+						<br><br>
+						Interested in coming along to one of our midweek events? Feel free to simply turn up - 
+						or call Michael Lawrence (pastor) on 01473 839785 for more information.
+					</p>
+
+					
+                    
+				</div>
+
+				
+
+			</section>
 
 				
 
