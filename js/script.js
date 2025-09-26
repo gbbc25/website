@@ -72,4 +72,45 @@ function topFunction() {
 } 
 
 
+/* js to make current page bold */
 
+document.addEventListener("scroll", () => {
+  const sections = document.querySelectorAll("section[id]");
+  const navLinks = document.querySelectorAll("#about-us-nav a");
+
+  let current = "";
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop;
+    if (scrollY >= sectionTop - 50) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navLinks.forEach(link => {
+    link.classList.remove("active-page");
+    if (link.getAttribute("href") === `#${current}`) {
+      link.classList.add("active-page");
+    }
+  });
+});
+
+
+/* js to adjust auto-scroll for sticky-headers */
+
+function updateScrollPadding() {
+  const stickyHeaders = document.querySelectorAll('.sticky-header');
+  let totalHeight = 0;
+
+  stickyHeaders.forEach(header => {
+    totalHeight += header.offsetHeight;
+  });
+
+  document.documentElement.style.setProperty(
+    '--header-offset',
+    totalHeight + 'px'
+  );
+}
+
+// Run on load + resize
+window.addEventListener('load', updateScrollPadding);
+window.addEventListener('resize', updateScrollPadding);

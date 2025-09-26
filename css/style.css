@@ -12,7 +12,9 @@ body {
   
 
   scroll-behavior: smooth;
-  scroll-padding-top: 72px;   /* Currently hard coded for web only */
+
+  /*scroll-padding-top: 72px;   /* Currently hard coded for web only */
+  scroll-padding-top: var(--header-offset, 0px);
 }
 
 /* Dotted bottom border to signify end of 'page' */
@@ -72,12 +74,16 @@ header {
   position: sticky;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
 
 /* Styling for navigation links */
 header a {
   text-decoration: none;
   color: black;
+
+  font-weight: bold;
+  font-weight: 600;
   
 }
 
@@ -246,6 +252,11 @@ body.menu-open {
 
 #home-title-banner h2{
   margin-bottom: 0;
+  
+}
+
+#home-title-banner h3{
+  margin-bottom: 0;
   padding-bottom: 50px;
 }
 
@@ -269,6 +280,7 @@ body.menu-open {
   font-weight: 400;
   font-style: normal;
   color: rgb(255, 255, 255);
+  color: black;
   font-kerning: none;
   text-decoration: none;
   text-shadow: rgba(0, 0, 0, 0.325) 0px 1.51499px 6.4387px;
@@ -283,6 +295,7 @@ body.menu-open {
 
 #welcome {
   background-color: rgb(28, 27, 21);
+  background-color: beige;
   display: flex;
   flex-wrap: wrap;      /* Allows wrapping to new line when space is tight */
   justify-content: center;  /* Centers items horizontally */
@@ -307,6 +320,7 @@ body.menu-open {
   font-weight: 400;
   font-style: normal;
   color: rgb(209, 216, 225);
+  color: black;
   font-kerning: none;
   text-decoration: none;
   line-height: 57px;
@@ -322,6 +336,7 @@ body.menu-open {
   font-weight: 400;
   font-style: normal;
   color: rgb(209, 216, 225);
+  color: black;
   font-kerning: none;
   text-decoration: none;
   line-height: 33px;
@@ -475,14 +490,14 @@ body.menu-open {
 /*                                 */
 
 #about-us-title-section{
-  background-color: #364c1e;
+  background-color: beige;
 }
 
 .about-us-title{
   font-size: 40.4px;
   font-weight: 400;
   font-style: normal;
-  color: rgb(255, 255, 255);
+  color: black;
   font-kerning: none;
   text-decoration: none;
   text-shadow: rgba(0, 0, 0, 0.325) 0px 1.51499px 6.4387px;
@@ -492,8 +507,7 @@ body.menu-open {
   padding-top: 30px;
   padding-bottom: 30px;
 
-  border-top: 5px solid white;
-  border-bottom: 5px solid white;
+
 }
 
 
@@ -519,8 +533,8 @@ body.menu-open {
   row-gap: 50px;
   padding-top: 20px;
 
-  padding-left: 50px;
-  padding-right: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
 
   padding-bottom:75px;
 
@@ -528,7 +542,8 @@ body.menu-open {
   
   
 
-
+  border-bottom: 2px solid black;
+  border-bottom-width: 60%;
   
 }
 
@@ -569,7 +584,7 @@ body.menu-open {
   line-height: 35px;
   letter-spacing: 0em;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 50px;
   padding-bottom: 30px;
   background-color: rgb(209, 200, 182);
   margin: 0px;
@@ -740,6 +755,119 @@ body.menu-open {
 /* Missionaries section styling */
 /*                              */
 
+#missionaries-section{
+  padding: 30px;
+  
+  background-color: #FFFDD0;
+
+}
+
+#missionaries-section h2{
+  text-align: center;
+  line-height: 28px;
+}
+
+#missionaries-section p{
+  text-align: center;
+  padding-bottom: 35px;
+
+  font-size: 18.86667px;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 28px;
+  letter-spacing: 0em;
+
+}
+
+#missionary-blurb{
+  border-bottom: 2px solid black; /* thickness | style | color */
+}
+
+#missionaries-header{
+  font-size: 50px;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  text-decoration: none;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  margin: 0px;
+}
+
+
+
+
+
+
+
+/* TEST CODE */
+
+
+
+#missionary-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  align-items: stretch; /* make all cards in a row the same height */
+}
+
+.missionary {
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  text-align: center;
+  display: flex;            /* NEW */
+  flex-direction: column;   /* stack inside */
+  justify-content: space-between; /* push link to bottom */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.missionary:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+  z-index: 0;
+}
+
+.missionary img {
+  width: 100%;
+  height: auto;        /* keep natural aspect ratio */
+  max-height: 180px;   /* optional: don’t let it get too tall */
+  object-fit: contain; /* letterbox if needed */
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+
+
+.missionary h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  flex-grow: 1; /* allow title space to grow and balance cards */
+}
+
+.missionary a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #0073e6;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+.missionary a:hover {
+  background: #005bb5;
+}
+
+
+
 
 
 
@@ -757,9 +885,7 @@ body.menu-open {
   padding-left: 20px;
   padding-right: 20px;
 
-  border-bottom: dashed;
-  border-width: 4px;
-  border-color: black;
+  
 }
 
 #test-whats-on-title{
@@ -792,6 +918,15 @@ body.menu-open {
   margin-top: 25px;
   margin-bottom: 25px;
 
+}
+
+#weekly-events-final-text{
+  text-align: center;
+  
+  padding-top: 25px;
+  padding-bottom: 20px;
+
+  font-size: 20px;
 }
 
 @media (max-width: 768px) {
@@ -907,9 +1042,12 @@ body.menu-open {
   line-height: 35px;
   letter-spacing: 0em;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 50px;
   padding-bottom: 30px;
   margin: 0px;
+
+
+  
 }
 
 
@@ -927,34 +1065,66 @@ body.menu-open {
   padding: 25px;
   gap: 20px;
 
+  column-gap: 40px;
+
   
-  margin-left: 25px;
-  margin-right: 25px;
+  
 }
 
-.service-time-box div{
+.service-directions{
+  display: flex;             /* aligns img + link inline */
+  gap: 10px;                 /* spacing between img and link */
+  align-items: center;       /* vertical align of img and text */
+}
+
+.service-time-box-text{
   display: inline-block;
   width: fit-content;
   color: black;
 }
 
+#stock-location-icon{
+  width: 20px;
+  height: auto;
+}
+
 .service-time-box h2{
   margin-top: 0;
   line-height: 25px;
+
+  text-align: center;
 }
 
 .service-time-box p {
   display: block;          /* default, so text wraps inside */
   max-width: 300px;         /* ensures it never exceeds the h2 width */
+  text-align: center;
 }
 
 .service-time-box a {
   color: black;
+  text-align: center;
+}
+
+.service-time-box-text div{
+  text-align: center;
 }
 
 #mickfield-logo{
   width: 240px;
   height: auto;
+}
+
+#mickfield-church {
+  width: 240px;
+  height: auto;
+  border-radius: 25px;
+}
+
+#blakenham-church-service{
+  width: 240px;
+  height: auto;
+  border-radius: 25px;
 }
 
 #blakenham-logo{
@@ -1023,6 +1193,11 @@ body.menu-open {
   word-break: break-word;    /* older support */
 }
 
+
+#service-faq{
+  padding-top: 25px;
+}
+
 /* Dropdown FAQ menu styling*/
 .accordion {
   background-color: #eee;
@@ -1083,6 +1258,9 @@ body.menu-open {
   align-items: center;
 
   column-gap: 150px;
+  
+  
+
   row-gap: 50px;
 
   padding-top: 25px;
@@ -1110,6 +1288,8 @@ body.menu-open {
   text-align: center;
   color: black;
 
+  
+
 }
 
 .cup-title{
@@ -1118,6 +1298,10 @@ body.menu-open {
   align-items: center;
   column-gap: 25px;
 
+}
+
+.cup-title h2{
+  
 }
 
 #email-stock-img{
@@ -1153,3 +1337,49 @@ body.menu-open {
  
 }
   
+
+
+
+
+#about-us-nav{
+  background-color: beige;
+  padding-top: 10px;
+  padding-bottom: 5px;
+
+  position: sticky;
+  top: 50px;
+  
+  z-index: 0;
+
+  overflow-x: auto; /* enables horizontal scrolling if needed */
+  -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
+}
+
+#about-us-nav ul{
+  display: flex;          /* line up li items horizontally */
+  flex-wrap: nowrap;      /* prevent wrapping to next line */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  
+}
+
+#about-us-nav li {
+  flex: 0 0 auto;         /* keep each item its natural width */
+  margin-right: 1rem;     /* spacing between items */
+}
+
+#about-us-nav a{
+  text-decoration: none;
+  color: black;
+  white-space: nowrap;
+}
+
+#about-us-nav a.active-page {
+  /*font-weight: bold;*/
+  text-decoration: underline;
+
+  text-underline-offset: 10px; /* adjust this value */
+  text-decoration-thickness: 2.5px;
+}

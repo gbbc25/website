@@ -26,7 +26,7 @@
 	<div id="container">
 
 		<!-- Header -->
-		<header>
+		<header class="sticky-header">
 
 			<!-- Default Desktop navigation -->
 			<nav>
@@ -72,11 +72,13 @@
 			<!-- home section  -->
 			 <!-- TODO redesign home page. Ideas: -->
 			<!-- TODO  Include logo, name, and service times at top-->
-			<section id="home-section">
+			<section id="home-section" class="page-border">
 
 				<div id="home-title-banner">
 					<h1>Great Blakenham Baptist Church</h1>
 					<h2>Sundays at 10:45am</h2>
+					<h3>Directions -></h3>
+					
 
 				</div>
 
@@ -96,12 +98,17 @@
 
 						<p id="welcome-paragraph">
 							A really warm welcome to GBBC. Whether you're new to the area, have lived here 
-							for many years, or are only here for a short time, we would love to meet you! 
+							for many years, or are just visiting, we would love to meet you! 
+							<br><br>
 							Our Sunday services are at 10.45am every week. We also meet together for an 
-							evening service every Sunday at Mickfield Evangelical Church at 6.30pm. 
+							evening service every Sunday at Mickfield Evangelical Church at 6.30pm. Click Here
+							for more information on our Sunday Services.
+							<br><br>
 							There are also many activities during the week that we welcome you to 
 							come along to. Please see below. 
 						</p>
+
+
 
 					</div>
 
@@ -116,7 +123,8 @@
             <!-- TODO this is a test section -->
 			<section id="test-whats-on" class="page-border">
 
-				<h1 id="test-whats-on-title">Weekly events at GBBC</h1>
+				<h1 id="test-whats-on-title">Weekly activities at GBBC</h1>
+
 
 				<!-- Prayer Meeting -->
                 <div class="test-event">
@@ -198,6 +206,11 @@
 
 				</div>
 
+				<p id="weekly-events-final-text">All our midweek events are free for anyone to join. Please feel free to simply turn up to any event you wish.
+					<br>You are also welcome to contact the pastor Michael Lawrence (contact details here) for more information or to let
+					us know you are coming.
+				</p>
+
 
 
 			</section>
@@ -221,20 +234,26 @@
 					<!-- Morning Service Details -->
 					<div class="service-time-box">
 
-						<div>
-							<h2>Morning Service at 10:45AM</h2>
+						<div  class="service-time-box-text">
+							<h2>Morning Service @ 10:45AM</h2>
 
 							<p>
-								Chapel Ln,<br>
-							    Great Blakenham,<br>
-								Ipswich IP6 0JJ
+								Great Blakenham Baptist Church,<br>
+							    Chapel Ln, Great Blakenham,<br>
+								Ipswich, IP6 0JJ
 							</p>
 
-							<a href="https://maps.app.goo.gl/uciuQApCqht1f8z67" target="_blank">Get Directions -></a>
+							<div>
+								<img id="stock-location-icon" src="img/location-stock-img.png">
+								<a href="https://maps.app.goo.gl/uciuQApCqht1f8z67" target="_blank">Get Directions</a>
+							</div>
+
+							
 
 						</div>
 						
-						<img id="blakenham-logo" src="img/logo-img.png">
+						<!-- <img id="blakenham-logo" src="img/logo-img.png"> -->
+						<img id="blakenham-church-service" src="img/church-photo.avif">
 
 					</div>
 
@@ -242,17 +261,25 @@
 					<div class="service-time-box">
 
 						<div class="service-time-box-text">
-							<h2>Evening Service at 6:30PM</h2>
+							<h2>Evening Service @ 6:30PM</h2>
 
 							<p>
-								We join Mickfield Evangelical Church for their evening service through our partnership with them.
+								Mickfield Evangelical Church,<br>
+								Stonham Rd, Mickfield,<br>
+								Suffolk, IP14 5LS
 							</p>
 
-							<a href="https://mickfieldec.co.uk/" target="_blank">More Info -></a>
+							<div>
+								<img id="stock-location-icon" src="img/location-stock-img.png">
+								<a href="https://maps.app.goo.gl/V5JG21TeWvaySAg3A" target="_blank">Get Directions</a>
+							</div>
+							
 
 						</div>
 						
-						<img id="mickfield-logo" src="img/mickfieldlogo.png">
+						<!-- <img id="mickfield-logo" src="img/mickfieldlogo.png">  -->
+						<img id="mickfield-church" src="img/mickfield-church.jpg">
+
 
 					</div>
 
@@ -264,10 +291,10 @@
 					<img id="morning-service-img" src="img/stock-reading-bible-together.jpg">
 
 					<p id="test-morning-service-details-bio">
-						Our <b>Sunday Morning service</b> are held on Chapel Lane in Great Blakenham at 10.45am every 
+						Our <b>Sunday Morning service</b> is held on Chapel Lane in Great Blakenham at 10.45am every 
 						Sunday, where you can expect a warm welcome, Bible-based teaching, Sunday
-						Club & Creche. The Gospel is central and our services include reading the Bible, 
-						praying, worshipping God, and a sermon. Please join us for refreshments after the service.
+						School & Creche. The Gospel is central and our services include reading the Bible, 
+						praying, worshipping God through song, and a sermon. Please join us for refreshments after the service.
 						<br><br>
 						We also have an <b>all-age-service</b> usually on the 3rd Sunday morning of the month - there is no Sunday school or 
 						organised crèche as the children stay in for the whole service. This usually includes a 
@@ -282,24 +309,36 @@
 					<img id="morning-service-img" src="img/stock-reading-bible-together.jpg">
 
 					<p id="test-morning-service-details-bio">
-						<b>New Here?</b> We would love to welcome you this Sunday!
-						<br><br>
-						If you are driving, there is limited car parking outside the Church. Alternatively, you can park
-						opposite at 'E Rand & Sons'. Entrance to the church is usually through the side entrance on the left
-						of the building. You should be welcomed at the entrance - if not - make your way through to the main
-						hall. Please don't feel pressured to join in on anything such as the singing if you don't feel
-						comfortable doing so.
-						<br><br>
-						If you would like more information on what goes on during our service, please see the 'Contact'
-						section to get our email/mobile.
-
+						<b>New Here?</b> We would love to welcome you this Sunday! Please see the FAQ below
+						for further information.
+				
+					
 					</p>
 
 					<div id="service-faq">
+
+						<button class="accordion">How do I get here?</button>
+						<div class="panel">
+							<p>Our address is: Great Blakenham Baptist Church, 
+								Chapel Lane, Great Blakenham, Suffolk, IP6 0JJ. 
+								<br><br>
+								Click <a href="https://maps.app.goo.gl/uciuQApCqht1f8z67" target="_blank">here</a>
+								 for directions.
+
+							</p>
+						</div>
+
 						<button class="accordion">Is there parking?</button>
 						<div class="panel">
 							<p>If you are driving, there is limited car parking outside the Church. Alternatively, you can park
-								opposite at 'E Rand & Sons'.
+								opposite at 'E Rand & Sons' (available only on Sundays).
+							</p>
+						</div>
+
+						<button class="accordion">When should I arrive?</button>
+						<div class="panel">
+							<p>The morning service starts at 10:45am, although most people start to arrive from 10:30 onwards.
+
 							</p>
 						</div>
 
@@ -307,7 +346,7 @@
 						<div class="panel">
 							<p>Entrance to the church is usually through the side door on the left of the building. You
 								should be greeted at the door - if not, make your way to the main hall which is immediately on
-								your right after entering through the side door.
+								your right after entering through the side door which is where the service takes place.
 							</p>
 						</div>
 
@@ -318,7 +357,26 @@
 							</p>
 						</div>
 
+						<button class="accordion">What should I wear?</button>
+						<div class="panel">
+							<p>Please come in clothes you feel most comfortable in.
+
+							</p>
+						</div>
+
+						<button class="accordion">Are children welcome?</button>
+						<div class="panel">
+							<p>Yes.
+
+							</p>
+						</div>
+
 					</div>
+
+					<p>We join Mickfield Evangelical Church for their evening service every sunday at 6:30PM. This is through 
+						the partnership between our two churches. For more information, 
+						visit: <a href="https://mickfieldec.co.uk/" target="_blank">https://mickfieldec.co.uk/</a>
+					</p>
 
 				
 
@@ -344,8 +402,20 @@
 					
 				</div> 
 
+
+                <div id="about-us-nav" >
+					<ul>
+						<li><a href="#leadership-section">Leadership</a></li>
+						<li><a href="#beliefs-section">What We Believe</a></li>
+						<li><a href="#partnerships-section">Partnerships</a></li>
+						<li><a href="#missionaries-section">Missionaries</a></li>
+
+				    </ul>
+				</div>
+
+
 				<!-- Leadership -->
-				<section id="leadership-section">
+				<section id="leadership-section" class="page-border">
 
 					<h1 id="leadership-section-header">Leadership</h1>
 					<div class="pastor-section">
@@ -389,7 +459,7 @@
 				</section>
 
 				<!-- Beliefs -->
-				<section id="beliefs-section">
+				<section id="beliefs-section" class="page-border">
 
                     <h1 id="beliefs-header">What we believe</h1>
 
@@ -403,6 +473,8 @@
 							forgiveness for all wrongs, pardoned all our offences and made us part of his family.
                             <br> <br>
 							To see the full statement of beliefs, see the link below.
+
+							1 John 4:19
                             <br><br>
 							LINK
 						</p>
@@ -411,7 +483,7 @@
 				</section>
 
 				<!-- Partnerships -->
-                <section id="partnerships-section">
+                <section id="partnerships-section" class="page-border">
 
 					<h1 id="partnerships-header">Partnerships</h1>
 
@@ -424,7 +496,7 @@
 							<h2 class="test-activity-name">Mickfield Evangelical Church</h2>
 							<h3 class="test-activity-date">(MEC)</h3>
 							<p class="test-paragraph">We are currently partnered with Mickfield Evangelical Church, which is where our 
-							Sunday evening services are held. Please visit their website to find out more:
+							Sunday evening services are held. Please visit their website to find out more about them:
 							<a href="https://mickfieldec.co.uk/" target="_blank">https://mickfieldec.co.uk/</a>
 							</p>
 						</div>
@@ -457,7 +529,7 @@
 							<h2 class="test-activity-name">Fellowship Of Independent Evangelical Churches</h2>
 							<h3 class="test-activity-date">(FIEC)</h3>
 							<p class="test-paragraph">Great Blakenham Baptist Church also has links with the Fellowship of Independent Evangelical Churches (FIEC)
-							who unite independent churches through the gospel to wok together to reach Britain: 
+							who unite independent churches through the gospel to work together to reach Britain: 
 							<a href="https://fiec.org.uk/" target="_blank">https://fiec.org.uk/</a>
 							</p>
 						</div>
@@ -475,15 +547,89 @@
 
 
 				<!-- Missionaries -->
-				<section id="missionaries-section" >
+				<section id="missionaries-section" class="page-border">
 
 					<h1 id="missionaries-header">Missionaries</h1>
+
+					<div id="missionary-blurb">
+
+						<h2>"Go therefore and make disciples of all nations,
+						 baptising them in the name of the Father and of 
+						 the Son and of the Holy Spirit, teaching them to
+						  observe all that I have commanded you." MATTHEW 28:19-20</h2>
+
+						<p>
+							As a Church we support 6 missionaries/organisations both financially
+							(or through donating items) and through prayer support. This is one
+							of the ways we tell the Good News to "all nations" as Jesus commanded.
+							Please join us in praying for these Christian missions, whether they are going
+							to the unreached world, providing relief, or education (abroad and at home),
+							that they are able to proclaim the Good News effectively in their situation.
+						</p>
+
+					</div>
+
+
+
+
+					<div id="missionary-content">
+
+						<!-- Albanian Evangelical Mission -->
+						<div class="missionary">
+							<h2>Albanian Evangelical Mission</h2>
+							<img src="img/albania.avif">
+							<a href="https://aemission.org/" target="_blank">Website -></a>
+						</div>
+
+						<!-- Asia Link -->
+						<div class="missionary">
+							<h2>Asia Link</h2>
+							<img src="img/asialink.avif" width="110" height="110">
+							<a href="https://www.asialink.org/" target="_blank">Website -></a>
+                        </div>
+
+                        <!-- Zambesi Mission-->
+						<div class="missionary">
+							<h2>Zambesi Mission</h2>
+							<img src="img/zambesi-new-logo.png" >
+							<a href="https://zambesimission.org/" target="_blank">Website -></a>
+                        </div>
+
+						<!-- grace baptist mission-->
+						<div class="missionary">
+							<h2>Grace Baptist Mission</h2>
+							<img src="img/gbm-updated-logo.jpg">
+							<a href="https://www.gbm.org.uk/" target="_blank">Website -></a>
+						</div>
+
+						<!-- FIND families in need -->
+						<div class="missionary">
+                            <h2>Families In Need</h2>
+						    <img src="img/FIND-new-logo.png">
+                            <a href="https://www.findipswich.org.uk/" target="_blank">Website -></a>
+                       </div>
+
+						<div class="missionary">
+							<h2>Slavic Gospel Association</h2>
+							<img src="img/slavic.avif">
+							<a href="https://sga.org.uk/" target="_blank">Website -></a>
+						</div>
+
+					</div>
+
 
 
 				</section>
 
 
 			</section> <!-- about-us section close tag -->
+
+
+			<!-- Up coming events -->
+			<section id="upcoming-events-page" class="page-border">
+				<h1 class="page-header">Upcoming Events</h1>
+ 
+			</section>
 
 
 			<!-- Contact us Page-->
@@ -513,7 +659,7 @@
 							<h2>Email/Mobile</h2>
 						</div>
 						<p>
-							blakenhambaptist@outlook.com<br>
+							blakenhambaptist@gmail.com<br>
 							01473 839785 
 						</p>
 					</div>
@@ -556,6 +702,10 @@
 		</footer>
 
 	</div>
+
+
+
+	
 
 </body>
 
