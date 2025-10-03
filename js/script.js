@@ -114,3 +114,20 @@ function updateScrollPadding() {
 // Run on load + resize
 window.addEventListener('load', updateScrollPadding);
 window.addEventListener('resize', updateScrollPadding);
+
+
+
+
+
+document.getElementById("special-link").addEventListener("click", function(e) {
+    e.preventDefault(); // stop default jump
+
+    const target = document.getElementById("mickfield-evening-service-box");
+
+    // Scroll so target is centered
+    target.scrollIntoView({ behavior: "smooth", block: "center" });
+
+    // Add highlight effect
+    target.classList.add("highlight");
+    setTimeout(() => target.classList.remove("highlight"), 600);
+  });
