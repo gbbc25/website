@@ -11,673 +11,161 @@ body {
 }
 
 
-#container {
-  max-width: 990px;
-  /* Adjust the width as needed */
-  margin: 0 auto;
-  /* Centers the container horizontally */
+/*                   */
+/* Re-usable styling */
+/*                   */
+
+.page{
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: dashed;
+  border-width: 4px;
+  border-color: black;
 }
 
-@media (max-width: 768px) {
-  #container{
-    max-width: 90%;
-  }
- 
-}
-
-
-/* CSS FOR NAVIGATION MENU */
-
-.menu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.flex-box{
   display: flex;
-  background-color: #ADD8E6;
-  /* Light blue */
+  flex-wrap: wrap;      /* Allows wrapping to new line when space is tight */
+  justify-content: center;  /* Centers items horizontally */
+  align-items: center;      /* Centers items vertically if needed */
 
-
+  column-gap: 75px;
+  row-gap: 25px;
 }
 
-.menu li {
-  position: relative;
-}
-
-/* Normal menu items */
-.menu a {
-  display: block;
-  padding: 10px 15px;
-  text-decoration: none;
-  color: black;
-  /* Normal text color */
-  background-color: #BAE9FF;
-  /* Light blue background */
-
-}
-
-/* Active/current page */
-.menu .active>a {
-  background-color: #30BDFF;
-  /* Darker blue */
-  color: white;
-  /* White text */
-}
-
-/* Dropdown menu */
-.dropdown-menu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: none;
-  /* Hidden by default */
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  /* Adjust the position to center */
-  background-color: #BAE9FF;
-  /* Light blue */
-}
-
-.dropdown-menu li {
-  width: 150px;
-}
-
-.dropdown-menu a {
-  padding: 10px;
-  display: block;
-  color: black;
-  /* Normal text */
-  text-align: left;
-  background-color: #BAE9FF;
-  /* Light blue */
-}
-
-/* Show dropdown on hover */
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
-
-/* Hover effect - Darker blue */
-.menu a:hover,
-.dropdown-menu a:hover {
-  background-color: #207EA9;
-  /* Darker than active page */
-  color: white;
-  /* White text when hovered */
-}
-
-/* Add a right border to distinguish menu items (excluding dropdowns) */
-.menu>li:not(.dropdown-menu):not(:last-child)>a {
-  border-right: 1px solid grey;
-  /* Vertical line between menu items */
-}
-
-/* Add border to dropdown items only between menu items (not on dropdown items) */
-.dropdown-menu li:not(:last-child)>a {
-  border-bottom: 1px solid grey;
-  /* Adds separation between dropdown items */
-}
-
-
-
-
-
-
-
-/* Responsive Navigation */
-.burger {
-  display: none;
-  font-size: 28px;
-  padding: 10px 15px;
-  cursor: pointer;
-  
-}
-
-.mobile-nav-overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100%;
-  background-color: rgba(186, 233, 255, 0.98);
-  z-index: 999;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.mobile-nav-overlay.active {
-  display: flex;
-}
-
-.mobile-menu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-}
-
-.mobile-menu li {
-  margin: 15px 0;
-}
-
-.mobile-menu a {
-  font-size: 22px;
-  text-decoration: none;
-  color: black;
-  background-color: transparent;
-}
-
-.close-btn {
-  position: absolute;
-  top: 15px;
-  right: 20px;
-  font-size: 32px;
-  cursor: pointer;
-  color: black;
-}
-
-/* Hide desktop menu on small screens */
-@media (max-width: 768px) {
-  .desktop-menu {
-    display: none;
-  }
-
-  .burger {
-    display: block;
-  }
-}
-
-
-
-
-
-
-header {
-  display: flex;
-  align-items: center;
-  /* Vertically align logo with nav/text */
-  justify-content: flex-start;
-  /* Ensures content starts from left */
-  padding: 10px;
-  margin-bottom: 50px;
-}
-
-#header-right {
-  display: flex;
-  flex-direction: column;
-  /* Stack nav and text vertically */
-  align-items: flex-end;
-  /* Align both nav and text to the right */
-  flex-grow: 1;
-  /* Takes up remaining space */
-}
-
-
-#mobile-service-times{
-  display:none;
-}
-
-@media (max-width: 500px) {
-  #mobile-service-times{
-    display:block;
-
-    border-top: 1px solid #181717;  /* Light grey */
-    border-bottom: 1px solid #181717;
-
-    margin-top:-25px;
-    margin-bottom:25px;
-  }
-
-  #service-info{
-    display:none;
-  }
-
-}
-
-
-#service-info {
-  font-size: 18px;
-}
-
-#welcome-section {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  padding-bottom: 90px;
-}
-
-/* Media query for small screens */
-@media (max-width: 768px) {
-  #welcome-section {
-    flex-direction: column; /* Stack elements vertically */
-  }
-
-  #welcome-text{
-    text-align: center;
-  }
-
-  #church-photo{
-    margin:auto;
-  }
-}
-
-
-#welcome-text {
-  font-size: 18px;
-  font-family: "DIN Next Light", sans-serif;
-  line-height: 1.8;
-
-}
-
-
-
-
-#weekly-events {
-  border: 2px solid lightblue;
-  /* Light blue border */
-  border-radius: 50px;
-  /* Curved corners */
-  margin-bottom: 20px;
-  text-align: center;
-
-  padding-bottom: 25px;
-
-}
-
-#row-one {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-
-  
-
-}
-
-#row-two {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-}
-
-#events {
-  text-align: center;
-}
-
-.events-styling {
-  font-size: 16px;
-
-}
-
-
-#wednesday-content {
-  display: flex;
-  gap: 50px;
-}
-
-@media (max-width: 768px) {
-  #row-one{
-    flex-wrap: wrap;
-
-  }
-
-  #row-two{
-    flex-wrap: wrap;
-
-  }
-
-  #wednesday-content{
-    flex-wrap: wrap;
-    margin: auto;
-    width: 50%;
-  }
-}
-
-
-
-
-
-footer {
-  border-top: 3px solid black;
-  padding: 12px;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 50px;
-
-}
-
-@media (max-width: 768px) {
-  footer{
-    flex-wrap: wrap;
-    
-    
-    
-  }
-}
-
-
-.standard-text {
-  font-size: 17px;
-}
-
-
-
-/**   CSS FOR "ABOUT US" PAGE **/
-
-#get-to-know-us-better-content {
-  display: flex;
-  gap: 30px;
-}
-
-.heading-styling {
-  font-weight: normal;
-  font-size: 25px;
-  border-bottom: 1px solid black;
-  padding-bottom: 12px;
-}
-
-.sub-head-styling {
-  font-weight: normal;
-  font-size: 25px;
-  font-family: din-next-w01-light, din-next-w02-light, din-next-w10-light, sans-serif;
-  display: inline;
-}
-
-
-.section-content {
-  display: flex;
-  justify-content: center;
-  gap: 60px;
-}
-
-.partner {
-  text-align: center;
-  max-width: 200px;
-}
-
-.sub-header {
-  font-weight: normal;
-  font-size: 22px;
-  border-bottom: 1px solid black;
-  padding-bottom: 12px;
-
-}
-
-@media (max-width: 768px) {
-  #you-are-loved{
-    display: none;
-
-  }
-
-  .section-content {
-    flex-wrap: wrap;
-  }
-}
-
-
-/** beliefs styling **/
-
-#statement-of-beliefs {
-  text-align: center;
-}
-
-.statement {
-  margin-bottom: 0;
-}
-
-.verse-styling {
-  font-style: italic;
-  margin-top: 0;
-}
-
-
-/** missionary page styling **/
-.missionary-heading {
-  font-size: 27px;
-  color: #292929;
-  font-family: chelsea market, fantasy;
-}
-
-.chelsea-market-regular {
-  font-family: "Chelsea Market", system-ui;
-  font-weight: 400;
+p{
+  font-size: 1.5rem;
   font-style: normal;
-
-  text-align: right;
+  line-height: 33px;
+  color: black;
 }
 
-#missionary-content {
+
+
+
+
+/*                      */
+/* Home section styling */
+/*                      */
+
+#home-section-container{
+  background-color: beige;
+}
+
+#home-section-container h1, h2{
   text-align: center;
+  color: black;
 }
 
-.missionary-text-styling {
-  font-size: 18px;
+#home-section-container p{
+  max-width: 600px;            /* Prevent text from being too wide */
 }
 
-.website-button {
-
-  background-color: #c0fdfd;
-  /* Light mint color */
-  font-size: 16px;
-  /* Adjust font size */
-  padding: 10px 20px;
-  /* Padding for size */
-  border: none;
-  /* Remove default border */
-  border-radius: 25px;
-  /* Rounded edges */
-  cursor: pointer;
-  /* Pointer cursor */
-  transition: all 0.3s ease;
-  /* Smooth effect */
-
-  float: right;
-
-
-}
-
-.website-button:hover {
-  background-color: #a8f5f5;
-}
-
-.missionary-contents-row {
-  border-bottom: 1px solid grey;
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 20px;
-  padding-top:20px;
-}
-
-.missionary {
-  display: flex;
-  gap: 40px;
-}
-
-
-
-@media (max-width: 768px) {
-  .missionary-contents-row{
-    flex-wrap: wrap;
-    padding-bottom: 15px;
-  }
-
-  .missionary{
-    padding-bottom: 15px;
-    padding-top: 5px;
-  }
-
-  .website-button {
-    float:left;
-  }
-}
-
-
-
-/** CSS for services page  **/
-
-.services-content {
-  display: flex;
-  gap: 20px;
-}
-
-.services-title {
-  margin-top: 0;
-  font-size: 25px;
-  font-weight: normal;
-}
-
-#services-pictures {
-  display: flex;
-  gap: 40px;
-}
-
-
-@media (max-width: 900px) {
-  #cross-in-sky{
-    display:none;
-  }
-  #service-img1{
-    display:none;
-  }
-  #service-img2{
-    display:none;
-  }
-  #service-img3{
-    display:none;
-  }
-
-  
-  .services-content{
-    text-align: center;
-    display:initial;
-  }
-  
-
-}
-
-
-
-.upcoming-event-title {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-
-
-
-#groups-coffee{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;  /* Allow multiple lines */
-  overflow:auto;
-}
-
-#coffee-text{
-  max-width: 300px;
-  min-width: 300px;
-  
-}
-
-#coffee-image-groups{
-  float:right;
-}
-
-.group-header{
-  font-size: 25px;
-  font-weight: normal;
-}
-
-.gg-item{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;  /* Allow multiple lines */
-  overflow:auto;
-}
-
-#friday-text{
-  max-width: 300px;
-  min-width: 300px;
-}
-
-
-@media (max-width: 768px) {
-  #row-one{
-    flex-wrap: wrap;
-
-  }
-
-  #leaders{
-    flex-wrap:wrap;
-  }
-
-
-
-}
-
-
-.regular-item{
-  padding-bottom:50px;
-}
-
-
-
-.upcoming-event {
-  display: flex;
-  flex-wrap: wrap; /* allows the items to wrap to the next line */
-
-  gap: 1rem;
-  padding: 1rem;
-
-}
-
-#barbecue-picture{
+#home-section-container img{
   max-width: 100%;
   height: auto;
+  border-radius: 30px;
 }
 
-.upcoming-text{
-  flex: 1 1 300px;
-  min-width: 300px;
-  max-width: 509px;
-
-  font-size: 1.3rem;
-  line-height: 1.3;
-}
-
-
-@media (max-width: 850px) {
-  .upcoming-event {
-    flex-direction: column;
-    align-items: center; /* center children horizontally */
-  }
-
-}
-
-
-
-#summer-barbecue{
-  background-color: beige;
-  padding: 10px;
+.section-title{
+  color: black;
   
 
+  font-size: 50px;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 55px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  margin: 0px;
+}
+
+
+
+
+ 
+/*                          */
+/* Services section styling */
+/*                          */
+  
+
+
+
+
+/*                           */
+/* What's on section styling */
+/*                           */
+
+#whats-on-section-container {
+  background-color: #e9fae3;
+}
+
+#activity{
   display: flex;
-  flex-wrap: wrap;
-  gap: 2rem; /* space between text and image */
-
-  border-radius: 8px; /* optional: rounded corners */
-  align-items: center; /* vertical align if needed */
+  flex-wrap: wrap; /* allows wrapping when not enough space */
+  align-items: center;
   justify-content: center;
-  margin-bottom: 2rem;
+  column-gap: 30px;
+  border-bottom: 1px solid black;   
+  padding-bottom: 25px;  
+  padding-top: 25px;
 }
 
-.barbecue-info{
-  flex: 1 1 100px; /* allow text to shrink/grow but not below 300px */
-  max-width: 200px;
-  min-width:200px;
-  font-weight: bold;
-  font-size: 1.5rem;
-  line-height: 1.15;
-  
+@media (max-width: 768px) {
+  #activity{
+    text-align: center;
+  }
 }
+
+
+/* Activity img */
+#whats-on-section-container img{
+  max-width: 304px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Activity content container */
+#whats-on-section-container div{
+  min-width: 250px;
+  flex: 1;
+}
+
+/* Activity title */
+#whats-on-section-container h3{
+  font-style: normal;
+  font-size: 1.714em;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1px;
+  max-height: 2.4em;
+  overflow: hidden;
+}
+
+/* Activity date */
+#whats-on-section-container h4{
+  font-size: 1.14em;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+/* Activity description */
+#whats-on-section-container p{
+  white-space: normal;   /* allow wrapping */
+  overflow-wrap: break-word; /* break long words/URLs */
+  word-break: break-word;    /* older support */
+}
+
+#weekly-events-final-text{
+  text-align: center;
+  
+  padding-top: 25px;
+  padding-bottom: 20px;
+
+  font-size: 20px;
+}
+
