@@ -8,6 +8,9 @@ body {
   font-size: 1rem;
   color: #303137;
   margin: 0;
+
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
 }
 
 
@@ -16,8 +19,7 @@ body {
 /*                   */
 
 .page{
-  padding-left: 20px;
-  padding-right: 20px;
+  
   border-bottom: dashed;
   border-width: 4px;
   border-color: black;
@@ -50,11 +52,25 @@ p{
 
 #home-section-container{
   background-color: beige;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
+
+}
+
+#home-section-container h1{
+  line-height: 35px;
+  margin-top: 0px;
+  
 }
 
 #home-section-container h1, h2{
   text-align: center;
   color: black;
+}
+
+#home-section-container h2{
+  padding-bottom: 40px;
 }
 
 #home-section-container p{
@@ -101,6 +117,8 @@ p{
 
 #whats-on-section-container {
   background-color: #e9fae3;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 #activity{
@@ -113,6 +131,8 @@ p{
   padding-bottom: 25px;  
   padding-top: 25px;
 }
+
+
 
 @media (max-width: 768px) {
   #activity{
@@ -169,3 +189,884 @@ p{
   font-size: 20px;
 }
 
+
+
+
+
+/*                            */
+/* Leadership section styling */
+/*                            */
+
+#leadership-section-container{
+
+}
+
+#leadership-section-container h2{
+  background-color: rgb(187, 175, 153);
+}
+
+#leaders-container{
+  
+}
+
+#leaders-container > div:nth-child(odd) {
+  background-color: rgb(187, 175, 153); 
+}
+
+#leaders-container > div:nth-child(even) {
+  background-color: rgb(209, 200, 182); 
+}
+
+#leader{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  column-gap: 90px;
+  row-gap: 50px;
+
+  padding-bottom: 50px;
+  padding-top: 50px;
+
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#leader img{
+  width: clamp(250px, 50vw, 350px);
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Container for text content of leader*/
+#leader div{
+  min-width: 350px;
+  flex: 1;
+}
+
+/* Leader name */
+#leader h3{
+  margin-top: 0px;
+  font-size: 28px;
+  margin-bottom: 0px;
+} 
+
+/* Leader role */
+#leader h4{
+  font-size: 26.6667px;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 28px;
+  letter-spacing: 0em;
+  margin-top: 10px;
+}
+
+/* Leader bio */
+#leader p{
+
+}
+
+
+
+
+
+/*                          */
+/* Beliefs section styling */
+/*                          */
+
+#beliefs-section-container{
+  background: rgb(239, 234, 227);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+}
+
+#beliefs-section-container img{
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  display: block;
+}
+
+.beliefs-content div{
+  min-width: 250px;
+  flex: 1;
+}
+
+
+
+
+/*                              */
+/* Partnerships section styling */
+/*                              */
+
+#partnerships-section-container{
+  background-color: lightgrey;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#partners-container > #partner:not(:last-child){
+  border-bottom: 1px solid black;   
+  padding-bottom: 25px;    
+}
+
+#partnerships-section > #partner:not(:last-child){
+  border-bottom: 1px solid black;   
+  padding-bottom: 25px;    
+}
+
+#partner{
+  display: flex;
+  flex-wrap: wrap; /* allows wrapping when not enough space */
+  align-items: center;
+  justify-content: center;
+  column-gap: 30px;
+    
+  padding-bottom: 25px;  
+  padding-top: 25px;
+}
+
+@media (max-width: 768px) {
+  #partner{
+    text-align: center;
+  }
+}
+
+
+/* partner img */
+#partner img{
+  width: 200px;
+  height: 200px;
+  border-radius: 25px;
+}
+
+/* partner content container */
+#partner div{
+  min-width: 250px;
+  flex: 1;
+}
+
+/* parter name */
+#partner h3{
+  font-style: normal;
+  font-size: 1.714em;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1px;
+  max-height: 2.4em;
+  overflow: hidden;
+}
+
+/* partner abbreviation */
+#partner h4{
+  font-size: 1.14em;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+/* partner bio */
+#partner p{
+  white-space: normal;   /* allow wrapping */
+  overflow-wrap: break-word; /* break long words/URLs */
+  word-break: break-word;    /* older support */
+}
+
+
+
+
+
+/*                              */
+/* Missionaries section styling */
+/*                              */
+
+#missionaries-section-container{
+  background-color: #FFFDD0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#missionaries-section-container h3{
+  text-align: center;
+  line-height: 28px;
+  font-size: 1.6rem;
+}
+
+#missionaries-section-container p{
+  text-align: center;
+  padding-bottom: 35px;
+
+  
+  line-height: 28px;
+  letter-spacing: 0em;
+
+}
+
+#missionaries-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  align-items: stretch; /* make all cards in a row the same height */
+}
+
+#missionary{
+  
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  text-align: center;
+  display: flex;            /* NEW */
+  flex-direction: column;   /* stack inside */
+  justify-content: space-between; /* push link to bottom */
+}
+
+#missionary h3{
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  flex-grow: 1; /* allow title space to grow and balance cards */
+}
+
+#missionary img {
+  width: 100%;
+  height: auto;        /* keep natural aspect ratio */
+  max-height: 180px;   /* optional: don’t let it get too tall */
+  object-fit: contain; /* letterbox if needed */
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+#missionary a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #0073e6;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+
+
+
+
+/*                              */
+/* Contact-us section styling */
+/*                              */
+
+#contact-us-section-container{
+  background: rgb(141, 132, 115);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 35px;
+}
+
+#contact-us-section-container h2{
+  color: white;
+}
+
+#contact-flex{
+  justify-content: space-evenly;
+  /*align-items: flex-start;*/
+}
+
+#contact-us-section-container p{
+  color: white;
+  
+}
+
+.social-element{
+  display: flex;
+  align-items: center; /* Vertically center items */
+  column-gap: 25px;
+  
+}
+
+.social-element p{
+  margin: 0;
+
+}
+
+.social-element img{
+  width: 50px;
+  height: auto;
+}
+
+.social-element a{
+  color: inherit;
+}
+
+#social-container{
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+
+#location-img{
+  width:50px;
+  height: auto;
+}
+
+
+
+
+
+/* TODO    The following css is dumped from old version */
+/* TODO    -> needs to be refactored */
+/* TODO */
+/* TODO */
+/* TODO */
+
+
+
+
+
+/* Top header */
+header {
+  background-color: beige;
+  display: flex;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Styling for navigation links */
+header a {
+  text-decoration: none;
+  color: black;
+
+  font-weight: bold;
+  font-weight: 600;
+  
+}
+
+/* Float navigation right */
+header nav {  
+  margin-left: auto;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul li {
+  padding: 10px;
+}
+
+ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+
+/* Mobile Menu */
+
+
+/* When menu is open, prevent scrolling */
+body.menu-open {
+  overflow: hidden;
+}
+
+#hamburger-icon div{
+  
+  width: 35px;
+  height: 3px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+#hamburger-text{
+  margin: none;
+  padding: none;
+  
+  position: absolute;
+  right: 65px;
+  top: -14px;
+  
+  align-items: center;
+
+  cursor: pointer;
+
+  user-select: none; /* Standard */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* Older IE/Edge */
+  
+}
+
+.open .bar1 {
+  -webkit-animation: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+
+
+
+/* Mobile Menu */
+
+#overlay{
+  height: 0%;
+  width: 100%;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(245,245,220); 
+  overflow-y: hidden; /* Disable horizontal scroll */
+  transition: 0.5s;
+}
+
+
+/* Position the content inside the overlay */
+.mobile-menu {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+
+  display: flex;
+  flex-direction: column; /* stack vertically */
+  align-items: center;    /* center the list items */
+  gap: 20px;              /* spacing between items */
+  list-style: none;       /* remove default bullets */
+  padding: 0;
+  
+}
+
+
+
+/* The navigation links inside the overlay */
+.overlay li a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+
+#hamburger-icon{
+  display: none;  /* Hide by default */
+  z-index: 2;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  cursor: pointer;
+  
+}
+
+/* Display hamburger menu instead of regular when on mobile */
+@media (max-width: 768px){
+  header nav{
+    display: none;
+  }
+
+  #hamburger-icon{
+    display: block ;
+    margin-left: auto;
+    padding-right: 20px;
+    
+  }
+}
+
+
+
+
+
+
+
+
+
+#statement-of-beliefs {
+  text-align: center;
+}
+
+.statement {
+  margin-bottom: 0;
+}
+
+.verse-styling {
+  font-style: italic;
+  margin-top: 0;
+}
+
+
+#beliefs-container{
+  background-color: beige;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+}
+
+
+
+
+
+
+#about-us-title-section{
+  background-color: beige;
+}
+
+#about-us-nav{
+  background-color: beige;
+  padding-top: 10px;
+  padding-bottom: 5px;
+
+  position: sticky;
+  top: 50px;
+  
+  z-index: 0;
+
+  overflow-x: auto; /* enables horizontal scrolling if needed */
+  -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
+}
+
+#about-us-nav ul{
+  display: flex;          /* line up li items horizontally */
+  flex-wrap: nowrap;      /* prevent wrapping to next line */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  
+}
+
+#about-us-nav li {
+  flex: 0 0 auto;         /* keep each item its natural width */
+  margin-right: 1rem;     /* spacing between items */
+}
+
+#about-us-nav a{
+  text-decoration: none;
+  color: black;
+  white-space: nowrap;
+}
+
+#about-us-nav a.active-page {
+  /*font-weight: bold;*/
+  text-decoration: underline;
+
+  text-underline-offset: 10px; /* adjust this value */
+  text-decoration-thickness: 2.5px;
+}
+
+
+
+
+
+
+
+
+
+
+#service-section-container{
+  
+
+  /*background-color: rgb(180, 172, 172);*/
+  background-color: #dee8d5;
+
+  
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#morning-evening-details{
+  display: flex;
+  flex-wrap: wrap; /* allows wrapping when not enough space */
+  
+  justify-content: center; /* center horizontally */
+
+  column-gap: 50px;
+  row-gap: 50px;
+  
+  padding-top: 50px;
+
+  margin: 20px;
+  padding-bottom: 25px;
+  
+}
+
+#test-sunday-section-title{
+  color: black;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  margin: 0px;
+
+
+  
+}
+
+
+
+
+.service-time-box{
+  background-color: white;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: fit-content;
+
+  border-radius: 15px;
+  padding: 25px;
+  gap: 20px;
+
+  column-gap: 40px;
+
+  
+  
+}
+
+.service-directions{
+  display: flex;             /* aligns img + link inline */
+  gap: 10px;                 /* spacing between img and link */
+  align-items: center;       /* vertical align of img and text */
+}
+
+.service-time-box-text{
+  display: inline-block;
+  width: fit-content;
+  color: black;
+}
+
+#stock-location-icon{
+  width: 20px;
+  height: auto;
+}
+
+.service-time-box h2{
+  margin-top: 0;
+  line-height: 25px;
+
+  text-align: center;
+}
+
+.service-time-box p {
+  display: block;          /* default, so text wraps inside */
+  max-width: 300px;         /* ensures it never exceeds the h2 width */
+  text-align: center;
+}
+
+.service-time-box a {
+  color: black;
+  text-align: center;
+}
+
+.service-time-box-text div{
+  text-align: center;
+}
+
+#mickfield-logo{
+  width: 240px;
+  height: auto;
+}
+
+#mickfield-church {
+  width: 240px;
+  height: auto;
+  border-radius: 25px;
+}
+
+#blakenham-church-service{
+  width: 240px;
+  height: auto;
+  border-radius: 25px;
+}
+
+#blakenham-logo{
+  width: 240px;
+  height: auto;
+}
+
+
+.test-morning-service-details{
+  display: flex;
+  flex-wrap: wrap; /* allows wrapping when not enough space */
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 25px;
+
+  margin: 20px;
+
+  
+}
+
+
+
+#test-morning-service-details-bio{
+  font-size: 24px;
+  line-height: 33px;
+  
+  padding-top: 25px;
+  
+  color: black;
+
+  min-width: 250px;   /* minimum width before it wraps */
+  flex: 1;            /* let it grow to fill remaining space */
+
+  white-space: normal;   /* allow wrapping */
+  overflow-wrap: break-word; /* break long words/URLs */
+  word-break: break-word;    /* older support */
+
+  
+
+}
+
+.new-here-text{
+  text-align: center;
+  white-space: normal;
+}
+
+#morning-service-img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+
+#mickfield-evening-service-box{
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+#mickfield-evening-service-box.highlight{
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+
+
+.service-component{
+  display: flex;
+  flex-wrap: wrap; /* allows wrapping when not enough space */
+  align-items: center;
+
+  justify-content: center;
+
+  column-gap: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.service-component p{
+  min-width: 250px;   /* minimum width before it wraps */
+  flex: 1;            /* let it grow to fill remaining space */
+
+  white-space: normal;   /* allow wrapping */
+  overflow-wrap: break-word; /* break long words/URLs */
+  word-break: break-word;    /* older support */
+}
+
+
+#service-faq{
+  padding-top: 25px;
+}
+
+/* Dropdown FAQ menu styling*/
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active-faq, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  
+  overflow: hidden;
+
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active-faq:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+
+.service-time-box-text p{
+  font-size: 20px;
+}
+
+#service-faq p{
+  font-size: 17px;
+}
+
+
+@media (max-width: 700px) {
+
+  .service-time-box {
+    justify-content: center; /* centers both text + image horizontally */
+    text-align: center;      /* centers text content inside */
+  }
+
+ 
+  .service-time-box-text {
+    width: 100%; /* ensures it takes full line */
+    text-align: center;
+  }
+  
+  .service-time-box-text p{
+    margin: 0 auto;      /* centers the <p> itself */
+    display: block;
+    text-align: center;  /* center text inside */
+  }
+
+  #mickfield-church {
+    margin: 0 auto; /* centers the image on its own line */
+    display: block; /* needed for margin:auto to work */
+  }
+}
