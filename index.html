@@ -1,268 +1,452 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Blakenham Baptist</title>
- 
-    <meta name="description" 
-        content="Welcome to Great Blakenham Baptist Church!">
 
-    <meta name="keywords" 
-        content="gbbc, church, Great Blakenham, Great Blakenham Baptist Church">
-    
-	<!-- Linking css styling -->
-    <link rel="stylesheet" href="css/style.css">
+	<head>
+		<title>Great Blakenham Baptist Church</title>
+	
+		<meta name="description" 
+			content="Welcome to Great Blakenham Baptist Church!">
 
-	<!-- Linking JavaScript functions -->
-	<script src="js/script.js" defer></script> 
+		<meta name="keywords" 
+			content="gbbc, church, Great Blakenham, Great Blakenham Baptist Church">
+		
+		<!-- Linking css styling -->
+		<link rel="stylesheet" href="css/style.css">
 
-	<!-- Allow reformatting on mobile -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Linking JavaScript functions -->
+		<script src="js/script.js" defer></script> 
 
-	<link rel="canonical" href="https://www.blakenhambaptist.org.uk/" />
+		<!-- Allow reformatting on mobile -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-</head>
+		<link rel="canonical" href="https://www.blakenhambaptist.org.uk/" />
 
-<body>
-    <!-- Page Container -->
-    <div id="container">
+	</head>
 
-        <!-- Header -->
-        <header> 
+	<body>
 
-            <!-- Church logo --> 
-            <img id="logo" src="img/logo-img.png" width="233" height="178">
-            
-			<!-- Navigation bar and service times -->
-            <div id="header-right">
+		<!-- Page Container -->
+		<div id="container">
 
-                <!-- Navigation -->
-                <nav>
-	                <div class="burger" onclick="toggleMobileNav()">☰</div>
+			<!-- Header -->
+			<header>
+				<!-- Default Desktop navigation -->
+			<nav>
+				<ul>
+					<li><a href="#home-section-container">Home</a></li>
+					<li><a href="#service-section-container">Services</a></li>
+					<li><a href="#whats-on-section-container">What's On</a></li>
+					<li><a href="#about-us-section-container">About Us</a></li>
+					<!--<li><a href="/about">Upcoming Events</a></li>-->
+					<li><a href="#contact-us-section-container">Contact Us</a></li>
+				</ul>
+			</nav>
 
-					<!-- Desktop navigation menu -->
-					<ul class="menu desktop-menu">
-						<li class="active"><a href="/">Home</a></li>
-						<li class="dropdown">
-							<a href="aboutus.html">About Us</a>
-							<ul class="dropdown-menu">
-								<li><a href="beliefs.html">What We Believe</a></li>
-								<li><a href="team.html">Meet The Team</a></li>
-								<li><a href="missionaries.html">Missionaries</a></li>
-							</ul>
-						</li>
-						<li class="dropdown">
-							<a href="services.html">Services</a>
-							<ul class="dropdown-menu">
-							    <li><a href="sundayschool.html">Sunday School & Crèche</a></li>
-							</ul>
-						</li>
-						<li><a href="regulargroups.html">Regular Groups</a></li>
+			<!-- Mobile navigation - curtain menu overlay when burger menu pressed -->
+			<div id="overlay">
+				<ul class="mobile-menu">
+					<li><a href="#home-section-container">Home</a></li>
+					<li><a href="#service-section-container">Services</a></li>
+					<li><a href="#whats-on-section-container">What's On</a></li>
+					<li><a href="#about-us-section-container">About Us</a></li>
+					<!--<li><a href="/about">Upcoming Events</a></li>-->
+					<li><a href="#contact-us-section-container">Contact Us</a></li>
+			    </ul>
+			</div>
 
-						<li><a href="upcomingevents.html">Upcoming Events</a></li>
-					</ul>
-  
-					<!-- Mobile Overlay (when burger menu activated) -->
-					<div class="mobile-nav-overlay" id="mobileNav">
-						<div class="close-btn" onclick="toggleMobileNav()">×</div>
-						<ul class="mobile-menu">
-							<li><a href="/">Home</a></li>
-							<li><a href="aboutus.html">About Us</a></li>
-							<li><a href="beliefs.html">What We Believe</a></li>
-							<li><a href="team.html">Meet The Team</a></li>
-							<li><a href="missionaries.html">Missionaries</a></li>
-							<li><a href="services.html">Services</a></li>
-							<li><a href="sundayschool.html">Sunday School & Crèche</a></li>
-							<li><a href="regulargroups.html">Regular Groups</a></li>
+            <!-- Hamburger button for mobile menu -->
+			<div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+				<p id="hamburger-text">Menu</p>
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
 
-							<li><a href="upcomingevents.html">Upcoming Events</a></li>
-						</ul>
+			<!-- TODO note - if on mobile overlay and manually resize screen - hamburger idsappears and u are stuck-->
+
+			</header>
+
+
+			<!-- Main Content -->
+
+			<!-- Home section -->
+			<section id="home-section-container" class="page">
+
+				<h1>Great Blakenham Baptist Church</h1>
+				<h2>Sundays at 10:45am</h2>
+
+				<div class="flex-box">
+					<img src="img/church-photo.avif" alt="Exterior photo of the church.">
+                    <div>
+						<p>A really warm welcome to GBBC. Whether you're new to the area, have lived here 
+							for many years, or are just visiting, we would love to meet you!</p>
+
+						<p>Our Sunday services are at 10.45am every week. We also meet together for an 
+							evening service every Sunday at Mickfield Evangelical Church at 6.30pm. See below
+							for more information on our Sunday Services.</p>
+	
+						<p>There are also many activities during the week that we welcome you to 
+							come along to. (Click <a href="#test-whats-on">here</a> to see what's on.)</p>
 					</div>
-
-				</nav>
-  
-				<div id="service-info">
-						<p>Morning Service - 10:45 am<br>
-						<br>
-						Evening Service - 6:30 pm (at <a href="https://mickfieldec.co.uk/" target="_blank">MEC</a>)</p>
-				</div>
-
-            </div>
-
-        </header>
-
-		<!-- Mobile only display for service times -->
-		<section id="mobile-service-times">
-			<p>Morning Service - 10:45 am<br>
-				<br>
-				Evening Service - 6:30 pm (at <a href="https://mickfieldec.co.uk/" target="_blank">MEC</a>)</p>
-		</section>
-  
-		<!-- Main Content -->
-		<div>
-  
-			<!-- Welcome section -->
-			<section id="welcome-section">
-			
-				<img id="church-photo" src="img/church-photo.avif" width="367" height="246.2">
-					
-				<div id="welcome-text">
-					
-					<h1 style="margin:0;">Welcome to Great Blakenham Baptist Church </h1>
-
-					A really warm welcome to GBBC. Whether you're new to the area, have lived here for many years, 
-					or are only here for a short time, we would love to meet you! Our Sunday services are at <b>10.45am</b> 
-					every week. We also meet together for an evening service every Sunday at 
-					<a href="https://mickfieldec.co.uk/" target="_blank">Mickfield Evangelical Church</a> at <b>6.30pm</b>.
-					There are also many activities during the week that we welcome you to come along to. Please see below.
-
 				</div>
 
 			</section>
-   
-   
-    <!-- Weekly events section -->
-    <section id="weekly-events">
-     
-	  <h1> Whats On When at GBBC </h1>
-    
-	  <div id="row-one">
-	  
-	    <section class="events">
-		
-	      <h1>Sunday</h1>
-		  
-	      <img src="img/sunday-bible.avif" width="178" height="102">
-		  
-	      <p class="events-styling">
-	        <a href="services.html" >Morning Service</a> <br>
-	        10:45am
-	      </p>
-	 
-	      <p class="events-styling">
-	        Communion <br>
-	        1st Sunday of the month
-	      </p>
-	 
-	      <p class="events-styling">
-	        All Age Service <br>
-	        3rd Sunday of the month
-	      </p>
-	 
-	      <p class="events-styling">
-	        Evening Service <br>
-	        6:30pm (at <a href="https://mickfieldec.co.uk/" target="_blank">MEC</a>)
-	      </p>
-		  
-	    </section>
-	
-	    <section class="events">
-	
-	      <h1>Tuesday</h1>
-		  <a href="regulargroups.html#gg_pm">
-	      <img src="img/tuesday-prayer.avif" width="178" height="253">
-		</a>
-	      <p class="events-styling">
-			<a href="regulargroups.html#gg_pm">Prayer Meeting</a> <br>
-	        2:00pm - 3:00pm
-	      </p>
-		  
-	    </section>
-	
-		<section class="events">
 
-		  <h1>Wednesday</h1>
-		  
-		  <div id="wednesday-content">
-		  
-		    <div>
-				<a href="regulargroups.html#coffee_morning">
-		      <img src="img/coffee-morning.avif" width="178" height="253">
-			  </a>
-		      <p class="events-styling">
-				<a href="regulargroups.html#coffee_morning">Coffee Morning</a> <br>
-		        10am - Noon
-		      </p>
-			  
-		    </div>
+			<!-- Services section -->
+			<section id="service-section-container" class="page">
 
-		    <div>
+				<h2 class="section-title">Sunday Services</h2>
+
+				<section id="morning-evening-details">
+
+					<!-- Morning Service Details -->
+					<div class="service-time-box">
+
+						<div  class="service-time-box-text">
+							<h2>Morning Service @ 10:45AM</h2>
+
+							<p>
+								Great Blakenham Baptist Church,<br>
+							    Chapel Ln, Great Blakenham,<br>
+								Ipswich, IP6 0JJ
+							</p>
+
+							<div>
+								<img id="stock-location-icon" src="img/location-stock-img.png">
+								<a href="https://maps.app.goo.gl/uciuQApCqht1f8z67" target="_blank">Get Directions</a>
+							</div>
+
+							
+
+						</div>
+						
+						<!-- <img id="blakenham-logo" src="img/logo-img.png"> -->
+						<img id="blakenham-church-service" src="img/church-photo.avif">
+
+					</div>
+
+					<!-- Evening Service Details -->
+					<div id="mickfield-evening-service-box" class="service-time-box">
+
+						<div class="service-time-box-text">
+							<h2>Evening Service @ 6:30PM</h2>
+
+							<p>
+								Mickfield Evangelical Church,<br>
+								Stonham Rd, Mickfield,<br>
+								Suffolk, IP14 5LS
+							</p>
+
+							<div>
+								<img id="stock-location-icon" src="img/location-stock-img.png">
+								<a href="https://maps.app.goo.gl/V5JG21TeWvaySAg3A" target="_blank">Get Directions</a>
+							</div>
+							
+
+						</div>
+						
+						<!-- <img id="mickfield-logo" src="img/mickfieldlogo.png">  -->
+						<img id="mickfield-church" src="img/mickfield-church.jpg">
+
+
+					</div>
+
+				</section>
+				
+
+				<section id="service-border" class="test-morning-service-details" style="border-top-style: solid;
+  border-bottom-style: solid;">
+
+					<!--<img id="morning-service-img" src="img/stock-reading-bible-together.jpg">-->
+
+					<p id="test-morning-service-details-bio">
+						Our <b>Sunday Morning service</b> is held on Chapel Lane in Great Blakenham at 10.45am every 
+						Sunday, where you can expect a warm welcome, Bible-based teaching, Sunday
+						School & Creche. The Gospel is central and our services include reading the Bible, 
+						praying, worshipping God through song, and a sermon. Please join us for refreshments after the service.
+						<br><br>
+						We also have an <b>all-age-service</b> usually on the 3rd Sunday morning of the month - there is no Sunday school or 
+						organised crèche as the children stay in for the whole service. This usually includes a 
+						quiz, memory verse & interactive story.
+						<br><br>
+						We usually have <b>communion</b> on the first Sunday of the month (this takes place during the morning service). We welcome 
+						all who have trusted the Lord as their own personal saviour to our Communion meeting. It is a simple service of remembrance
+						of what Jesus did for us by dying for us on the cross and being raised to life again the third day.
+						<br><br>
+						We have an <b>evening Service</b> we meet at Mickfield Evangelical Church at 6.30pm. For directions, see <a href="#mickfield-evening-service-box" id="special-link">above</a>. 
+						All are very welcome to join us. For more information, visit their website at <a href="https://mickfieldec.co.uk/" target="_blank">https://mickfieldec.co.uk/</a>.
+					</p>
+
+					
+				</section>
+
+				<section class="test-morning-service-details">
+
+					
+
+					<p id="test-morning-service-details-bio" class="new-here-text">
+						<b>New Here?</b> We would love to welcome you this Sunday! Please see the FAQ below
+						for further information. (Click a question to see corresponding details)
+					</p>
+
+					<div id="service-faq">
+
+						<button class="accordion">How do I get here?</button>
+						<div class="panel">
+							<p>Our address is: Great Blakenham Baptist Church, 
+								Chapel Lane, Great Blakenham, Suffolk, IP6 0JJ. 
+								<br><br>
+								Click <a href="https://maps.app.goo.gl/uciuQApCqht1f8z67" target="_blank">here</a>
+								 for directions.
+
+							</p>
+						</div>
+
+						<button class="accordion">Is there parking?</button>
+						<div class="panel">
+							<p>If you are driving, there is limited car parking outside the Church. Alternatively, you can park
+								opposite at 'E Rand & Sons' (available only on Sundays). However please do not block their side entrance.
+							</p>
+						</div>
+
+						<button class="accordion">When should I arrive?</button>
+						<div class="panel">
+							<p>The morning service starts at 10:45am, although most people start to arrive from 10:30 onwards.
+
+							</p>
+						</div>
+
+						<button class="accordion">Where should I go when I arrive?</button>
+						<div class="panel">
+							<p>Entrance to the church is usually through the side door on the left of the building. You
+								should be greeted at the door - if not, make your way to the main hall which is immediately on
+								your right after entering through the side door which is where the service takes place.
+							</p>
+						</div>
+
+						
+
+					</div>
+
+	
+
+				
+
+
+					
+				</section>
+
+			</section>
+
+			<!-- whats-on section -->
+			<section id="whats-on-section-container" class="page">
+
+				<h2 class="section-title">Weekly activities at GBBC</h2>
+
+				<div id="activities-container"></div>
+
+				<template id="activity-template">
+
+					<div id="activity">
+
+						<img>          <!-- Activity img -->
+						<div>          <!-- Activity content container -->
+							<h3></h3>  <!-- Activity title -->
+							<h4></h4>  <!-- Activity date -->
+							<p></p>    <!-- Activity description -->
+						</div>
+
+					</div>
+					
+				</template>
+
+				<p id="weekly-events-final-text">All our midweek events are free for anyone to join. Please feel free to simply turn up to any event you wish.
+					<br>You are also welcome to contact the pastor Michael Lawrence (contact details <a href="#contact-us-section-container">here</a>) for more information or to let
+					us know you are coming.
+				</p>
+				
+			</section>
+
+			<!-- About Us Section -->
+			<section id="about-us-section-container">
+
+                <!-- About us Title and potentially navigation-->
+				<div id="about-us-title-section">
+
+					<h2 class="section-title">About us</h2>
+					
+				</div> 
+
+
+                <div id="about-us-nav" >
+					<ul>
+						<li><a href="#leadership-section-container">Leadership</a></li>
+						<li><a href="#beliefs-section-container">What We Believe</a></li>
+						<li><a href="#partnerships-section-container">Partnerships</a></li>
+						<li><a href="#missionaries-section-container">Missionaries</a></li>
+
+				    </ul>
+				</div>
+
+
+
+				<!-- Leadership section-->
+				<section id="leadership-section-container" class="page">
+
+					<h2 class="section-title">Leadership</h2>
+
+					<div id="leaders-container"></div>
+
+					<template id="leader-template">
+					
+						<div id="leader">
+
+							<img>          <!-- Leader img -->
+							<div>          <!-- Leader content container -->
+								<h3></h3>  <!-- Leader name -->
+								<h4></h4>  <!-- Leader role -->
+								<p></p>    <!-- Leader bio -->
+							</div>
+
+						</div>
+					
+					</template>
+
+				</section>
+
+
+				<!-- Beliefs section-->
+				<section id="beliefs-section-container" class="page">
+
+					<h2 class="section-title">What We Believe</h2>
+
+					<div class="flex-box beliefs-content" >
+
+						<img src="img/treeimg-removebg-preview.png">
+                        <div>
+							<p><b>Mission Statement</b> - "joyfully glorifying God : lovingly sharing Jesus".</p>
+
+							<p>We believe the staggering, life-changing good news that Jesus Christ is the King of the universe, and though 
+						  	 	we have failed in our lives, fallen from grace, and fought against him, he has entered our lives, brought 
+						 		forgiveness for all wrongs, pardoned all our offences and made us part of his family.</p>
+
+							<p>To see the full statement of beliefs, see the link below. (Link opens to separate page.)</p>
+
+							<a href="beliefs.html" target="_blank">Full Statement Of Beliefs</a>
+
+						</div>
+					</div>
+
+				</section>
+
+
+				<!-- Partnerships section-->
+				<section id="partnerships-section-container" class="page">
+
+					<h2 class="section-title">Partnerships</h2>
+
+					<div id="partners-container"></div>
+
+					<template id="partner-template">
+					
+						<div id="partner">
+
+							<img>          <!-- Partner logo -->
+							<div>          <!-- Partner content container -->
+								<h3></h3>  <!-- Partner full name -->
+								<h4></h4>  <!-- Partner name abreviation -->
+								<p></p>    <!-- Partner bio -->
+							</div>
+
+						</div>
+					
+					</template>
+
+				</section>
+
+
+				<!-- Missionaries section-->
+				<section id="missionaries-section-container" class="page">
+
+					<h2 class="section-title">Missionaries</h2>
+
+					<h3>"Go therefore and make disciples of all nations,
+						baptising them in the name of the Father and of 
+						the Son and of the Holy Spirit, teaching them to
+						observe all that I have commanded you." MATTHEW 28:19-20</h3>
+
+					<p>
+						As a Church we support 6 missionaries/organisations both financially
+						(or through donating items) and through prayer support. This is one
+						of the ways we tell the Good News to "all nations" as Jesus commanded.
+						Please join us in praying for these Christian missions, whether they are going
+						to the unreached world, providing relief, or education (abroad and at home),
+						that they are able to proclaim the Good News effectively in their situation.
+					</p>
+
+					<div id="missionaries-container"></div>
+
+					<template id="missionary-template">
+					
+						<div id="missionary">
+                            <h3></h3>      <!-- Missionary name -->
+							<img>          <!-- Missionary logo -->
+							<a target="_blank"> Website -></a>        <!-- Missionary website link-->
+						</div>
+					
+					</template>
+
+				</section>
+
+			</section>
+
+            <!-- contact us seciton -->
+			<section id="contact-us-section-container">
+
+				<h2 class="section-title">Contact us</h2>
+
+				<div class="flex-box" id ="contact-flex">
+					<div class="social-element">
+						<img id="location-img" src="img/placeholder.png">
+					<p>
+						Great Blakenham Baptist Church,<br>
+						Chapel Lane, Great Blakenham,<br>
+						Suffolk, IP6 0JJ<br>
+					</p>
+ 
+					</div>
+					
+
+					<div id="social-container">
+						<div class="social-element">
+							<img src="img/message2.png">
+						  	<p>blakenhambaptist@gmail.com</p>
+						</div>
+						
+						<div class="social-element">
+							<img src="img/callstock.png">
+							<p>01473 839785</p>
+						</div>
+				
+						<div class="social-element">
+							<img src="img/facebook1.png">
+							<p><a href="https://www.facebook.com/profile.php?id=61572886522431" target="blank" >facebook.com/profile.php?id=61572886522431</a></p>
+						</div>
+					
+					</div>
+					
 			
-		      <img src="img/games-night.avif" width="178" height="253">
-			  
-		      <p class="events-styling">
-		        Men's Games Night <br>
-		        7:30pm - 9:30pm
-		      </p>
-			  
-		    </div>
+					
+				</div>
 
-		  </div>
-		  
-		</section>
-	
-	  </div>
-	
-	  <div id="row-two">
-	
-	    <section class="events">
-	
-	      <h1>Thursday</h1>
-		  <a href="regulargroups.html#gg_pm">
-	      <img id="thursday-growth-img" src="img/growth-groups-bible.avif" width="178" height="253">
-		  </a>
-		  <p class="events-styling">
-			<a href="regulargroups.html#gg_pm">Growth Groups</a> <br>
-		    10:15am - 11:45am <br>
-			8:00pm - 9:30pm
-		  </p>
-		  
-	    </section>
-	
-	    <section class="events">
-	
-	      <h1>Friday</h1>
-		  
-		  <a href="regulargroups.html#child_groups">
-	      <img src="img/friday_club_img.avif" width="178" height="253">
-		  </a>
-		  
-	      <p class="events-styling">
-			<a href="regulargroups.html#child_groups">Friday Club</a> <br>
-	        6:30pm - 7:30pm <br>
-	        Reception - Year 6
-	      </p>
-		  
-	    </section>
-	
-      </div>
-	
-    </section>
+			</section>
+			
 
 
 
-   
-  </div>
-  
-  <!-- Footer -->
-  <footer> 
-  
-    <div class="standard-text">
-      Great Blakenham Baptist Church <br>
-      Chapel Lane <br>
-      Great Blakenham <br>
-      Suffolk <br>
-      IP6 0JJ <br>
-​      <br>
-      01473 839785 <br>
-      blakenhambaptist@outlook.com
-	</div>
 	
-    <iframe id="google-maps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d668.0578925354898!2d1.1031728398774574!3d52.10800343403751!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d9a3d099458f91%3A0x6f0c8781be5f0826!2sGreat%20Blakenham%20Baptist%20Church!5e0!3m2!1sen!2suk!4v1741631992839!5m2!1sen!2suk"
-	width="314" height="234" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+		</div>
 	
-  </footer>
- 
- </div>
- 
-</body>
+	</body>
+
 </html>
