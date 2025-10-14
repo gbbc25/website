@@ -70,8 +70,25 @@ p{
 }
 
 #home-section-container h2{
+  
+}
+
+#home-facebook-flex-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#home-facebook-logo{
+  width: 27px;
+  height: auto;
+
+ 
+
   padding-bottom: 40px;
 }
+
+
 
 #home-section-container p{
   max-width: 600px;            /* Prevent text from being too wide */
@@ -98,6 +115,7 @@ p{
   padding-top: 60px;
   margin: 0px;
 }
+
 
 
 
