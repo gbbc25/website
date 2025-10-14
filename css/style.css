@@ -490,6 +490,13 @@ p{
 }
 
 #contact-flex{
+  display: flex;
+  flex-wrap: wrap;      /* Allows wrapping to new line when space is tight */
+  
+
+  column-gap: 75px;
+  row-gap: 25px;
+
   justify-content: space-evenly;
   /*align-items: flex-start;*/
 }
@@ -524,6 +531,8 @@ p{
 #social-container{
   display: flex;
   flex-direction: column;
+  
+  
   row-gap: 25px;
 }
 

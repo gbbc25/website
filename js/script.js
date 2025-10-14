@@ -250,9 +250,14 @@ document.addEventListener("scroll", () => {
     link.classList.remove("active-page");
     if (link.getAttribute("href") === `#${current}`) {
       link.classList.add("active-page");
+
+
+      
     }
+
   });
 });
+
 
 
 
