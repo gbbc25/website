@@ -161,6 +161,7 @@ p{
 
 /* Activity img */
 #whats-on-section-container img{
+  
   max-width: 304px;
   height: auto;
   border-radius: 8px;
@@ -522,6 +523,8 @@ p{
 .social-element img{
   width: 50px;
   height: auto;
+
+  
 }
 
 .social-element a{
@@ -1097,4 +1100,46 @@ body.menu-open {
     margin: 0 auto; /* centers the image on its own line */
     display: block; /* needed for margin:auto to work */
   }
+}
+
+
+
+#christmas-banner h3{
+  text-align: center;
+  
+}
+
+#christmas-banner{
+  border-style: solid;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  background-color: white;
+}
+
+#christmas-banner2{
+  background-color: black;
+}
+
+#christmas-banner2 p{
+  text-align: center;
+  color: white;
+  font-style: bold;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#christmas-banner2 a{
+  text-decoration: none;
+  text-decoration: underline;
+  color: white;
+}
+
+
+
+#fb-logo-Christmas{
+  width: 40px;
+  height: auto;
+  vertical-align: middle;
 }
