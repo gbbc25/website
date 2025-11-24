@@ -536,7 +536,9 @@ p{
   flex-direction: column;
   
   
-  row-gap: 25px;
+  row-gap: 45px;
+
+
 }
 
 #location-img{
@@ -544,6 +546,24 @@ p{
   height: auto;
 }
 
+
+
+
+#mobile-location{
+  display: none;
+}
+
+
+
+@media (max-width: 1000px) {
+  #desktop-location{
+    display:none;
+  }
+  
+  #mobile-location{
+    display: flex;
+  }
+}
 
 
 
@@ -1143,3 +1163,8 @@ body.menu-open {
   height: auto;
   vertical-align: middle;
 }
+
+
+
+
+
