@@ -139,6 +139,11 @@ p{
   padding-right: 20px;
 }
 
+#activities-term-time{
+  text-align: center;
+}
+
+
 #activity{
   display: flex;
   flex-wrap: wrap; /* allows wrapping when not enough space */

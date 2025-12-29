@@ -17,7 +17,7 @@ const events = [
     "img": "img/board-games-stock-img.jpg",
     "alt": "Board games.",
     "name": "Games Night",
-    "date": "Wednesday 7:30-9:30pm",
+    "date": "Wednesday 7:30-9:00pm",
     "description": "Games night at the church hall on Wednesday 7:30 pm to 9:30pm."
   },
   {
@@ -27,13 +27,13 @@ const events = [
     "date": "Thursday 10:15am & 7:45pm",
     "description": "We get together each week for our Growth Group meetings. We start informally with tea and biscuits, and follow this with a Bible study and prayer. One group meets at 10am on Thursday in the church hall. Another group meets at 7:45pm in a member's home."
   },
-  {
-    "img": "img/friday_club_img.avif",
-    "alt": "Children at Friday Club.",
-    "name": "Friday Club",
-    "date": "Friday 6:30pm",
-    "description": "This is held every Friday evening (term-time) from 6:30pm for one hour in the church's back hall for Primary School aged children."
-  }
+  //{
+  //  "img": "img/friday_club_img.avif",
+  //  "alt": "Children at Friday Club.",
+  //  "name": "Friday Club",
+  //  "date": "Friday 6:30pm",
+  //  "description": "This is held every Friday evening (term-time) from 6:30pm for one hour in the church's back hall for Primary School aged children."
+  //}
 ]
 
 const template = document.getElementById("activity-template");
