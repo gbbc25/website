@@ -100,13 +100,13 @@ const partners = [
     "abreviation": "(MEC)",
     "bio": 'We are currently partnered with Mickfield Evangelical Church, which is where our Sunday evening services are held. Please visit their website to find out more about them: <a href="https://mickfieldec.co.uk/" target="_blank">https://mickfieldec.co.uk/</a>',
   },
-  {
-    "img": "img/eagbc-logo.avif",
-    "alt": "Logo of the Association of Grace Baptist Churches.",
-    "name": "The Association Of Grace Baptist Churches (East Anglia)",
-    "abreviation": "(EAGBC)",
-    "bio": 'Great Blakenham Baptist Church is affiliated with the Association of Grace Baptist Churches (East Anglia) who seek to promote fellowship between churches for encouragement, evangelism and the glory of God. More information is available on their website: <a href="https://www.grace-ea.uk/" target="_blank">https://www.grace-ea.uk/</a>', 
-  },
+  //{
+  //  "img": "img/eagbc-logo.avif",
+  //  "alt": "Logo of the Association of Grace Baptist Churches.",
+  //  "name": "The Association Of Grace Baptist Churches (East Anglia)",
+  //  "abreviation": "(EAGBC)",
+  //  "bio": 'Great Blakenham Baptist Church is affiliated with the Association of Grace Baptist Churches (East Anglia) who seek to promote fellowship between churches for encouragement, evangelism and the glory of God. More information is available on their website: <a href="https://www.grace-ea.uk/" target="_blank">https://www.grace-ea.uk/</a>', 
+  //},
   {
     "img": "img/fiec-logo.avif",
     "alt": "Logo of the FIEC.",
