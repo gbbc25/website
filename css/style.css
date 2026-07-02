@@ -1187,4 +1187,18 @@ body.menu-open {
 
 
 
+#american-banner{
+ display: flex;
+  flex-wrap: wrap; /* allows wrapping when not enough space */
+  align-items: center;
+  justify-content: center;
 
+  column-gap: 30px;
+
+  
+  padding-bottom: 35px;
+  margin-bottom: 50px;
+
+
+  border-bottom: 4px dashed rgb(0, 0, 0);
+}
