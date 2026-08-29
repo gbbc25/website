@@ -1202,3 +1202,34 @@ body.menu-open {
 
   border-bottom: 4px dashed rgb(0, 0, 0);
 }
+
+
+
+
+
+
+
+#christianity-explored-page{
+  display: flex;
+  flex-direction: column; /* stack children vertically */
+  
+  align-items: center;
+  justify-content: center;
+
+  padding-left: 20px;
+  padding-right: 20px;
+
+  
+}
+
+#christianity-explored-page p{
+  max-width: 1000px;            /* Prevent text from being too wide */
+}
+
+#christianity-explored-page h1{
+  text-decoration: underline;
+  text-underline-offset: 10px; 
+
+  font-weight:700px;
+  font-size: 48px;
+}
