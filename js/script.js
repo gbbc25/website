@@ -39,15 +39,17 @@ const events = [
 const template = document.getElementById("activity-template");
 const container = document.getElementById("activities-container");
 
-events.forEach(event => {
-  const clone = template.content.cloneNode(true);
-  clone.querySelector("img").src = event.img;
-  clone.querySelector("img").alt = event.alt;
-  clone.querySelector("h3").textContent = event.name;
-  clone.querySelector("h4").textContent = event.date;
-  clone.querySelector("p").textContent = event.description;
-  container.appendChild(clone);
-});
+if (template && container) {
+  events.forEach(event => {
+    const clone = template.content.cloneNode(true);
+    clone.querySelector("img").src = event.img;
+    clone.querySelector("img").alt = event.alt;
+    clone.querySelector("h3").textContent = event.name;
+    clone.querySelector("h4").textContent = event.date;
+    clone.querySelector("p").textContent = event.description;
+    container.appendChild(clone);
+  });
+}
 
 
 
@@ -75,16 +77,17 @@ const leaders = [
 const leader_template = document.getElementById("leader-template");
 const leader_container = document.getElementById("leaders-container");
 
-leaders.forEach(leader => {
-  const clone = leader_template.content.cloneNode(true);
-  clone.querySelector("img").src = leader.img;
-  clone.querySelector("img").alt = leader.alt;
-  clone.querySelector("h3").textContent = leader.name;
-  clone.querySelector("h4").textContent = leader.role;
-  clone.querySelector("p").textContent = leader.bio;
-  leader_container.appendChild(clone);
-
-});
+if (leader_template && leader_container) {
+  leaders.forEach(leader => {
+    const clone = leader_template.content.cloneNode(true);
+    clone.querySelector("img").src = leader.img;
+    clone.querySelector("img").alt = leader.alt;
+    clone.querySelector("h3").textContent = leader.name;
+    clone.querySelector("h4").textContent = leader.role;
+    clone.querySelector("p").textContent = leader.bio;
+    leader_container.appendChild(clone);
+  });
+}
 
 
 
@@ -119,16 +122,17 @@ const partners = [
 const partner_template = document.getElementById("partner-template");
 const partner_container = document.getElementById("partners-container");
 
-partners.forEach(partner => {
-  const clone = partner_template.content.cloneNode(true);
-  clone.querySelector("img").src = partner.img;
-  clone.querySelector("img").alt = partner.alt;
-  clone.querySelector("h3").textContent = partner.name;
-  clone.querySelector("h4").textContent = partner.abreviation;
-  clone.querySelector("p").innerHTML = partner.bio;
-  partner_container.appendChild(clone);
-
-});
+if (partner_template && partner_container) {
+  partners.forEach(partner => {
+    const clone = partner_template.content.cloneNode(true);
+    clone.querySelector("img").src = partner.img;
+    clone.querySelector("img").alt = partner.alt;
+    clone.querySelector("h3").textContent = partner.name;
+    clone.querySelector("h4").textContent = partner.abreviation;
+    clone.querySelector("p").innerHTML = partner.bio;
+    partner_container.appendChild(clone);
+  });
+}
 
 
 
@@ -179,14 +183,16 @@ const missionaries = [
 const missionary_template = document.getElementById("missionary-template");
 const missionary_container = document.getElementById("missionaries-container");
 
-missionaries.forEach(missionary => {
-  const clone = missionary_template.content.cloneNode(true);
-  clone.querySelector("img").src = missionary.img;
-  clone.querySelector("img").alt = missionary.alt;
-  clone.querySelector("h3").textContent = missionary.name;
-  clone.querySelector("a").href = missionary.link;
-  missionary_container.appendChild(clone);
-});
+if (missionary_template && missionary_container) {
+  missionaries.forEach(missionary => {
+    const clone = missionary_template.content.cloneNode(true);
+    clone.querySelector("img").src = missionary.img;
+    clone.querySelector("img").alt = missionary.alt;
+    clone.querySelector("h3").textContent = missionary.name;
+    clone.querySelector("a").href = missionary.link;
+    missionary_container.appendChild(clone);
+  });
+}
 
 
 
